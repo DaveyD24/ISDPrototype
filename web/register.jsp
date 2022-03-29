@@ -14,7 +14,7 @@
     <body>
         <h1>This is register!!</h1>
         
-        <form>
+        <form method="POST" action="welcome.jsp">
             
             <label for="first_name">First Name:</label><br>
             <input type="text" id="first_name" name="first_name"><br>

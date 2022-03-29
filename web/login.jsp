@@ -14,7 +14,7 @@
     <body>
         <h1>This is Login!</h1>
         
-        <form>
+        <form method="POST" action="welcome.java">
             
             <label for="username">Username:</label><br>
             <input type="text" id="username" name="username"><br>
