@@ -27,7 +27,7 @@
                 <br><br><br><br><br><br>
         <h2><span class="pageheading">Login</span></h2>
         
-        <form class="formxd" method="POST" action="welcome.java">
+        <form class="formxd" method="POST" action="welcome.jsp">
             
             <label for="username">Username:</label><br>
             <input type="text" id="username" name="username"><br>

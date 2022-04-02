@@ -30,7 +30,8 @@
         <h2><span class="pageheading">Logout</span></h2>
         
         <p>
-            Thank you for using IoTBay. You have been logged out
+            Thank you for using IoTBay. You have been logged out <br>
+            <a href="index.html">Return to the main page</a>
         </p>
         
                          <footer>
