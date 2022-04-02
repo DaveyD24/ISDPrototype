@@ -132,7 +132,7 @@
             <label for="username">Choose a username:</label><br>
             <input type="text" id="username" name="username"><br>
             <label for="password">Enter a password:</label><br>
-            <input type="text" id="password" name="password"><br><br>
+            <input type="password" id="password" name="password"><br><br>
          
             <input type="submit" value="Submit">
         </form>
