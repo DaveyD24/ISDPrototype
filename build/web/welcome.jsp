@@ -25,11 +25,16 @@
 
         </ul>
                 <br><br><br><br><br><br>
-        <h2><span class="pageheading">Welcome XXXX</span></h2>
+        <h2><span class="pageheading">Welcome</span></h2>
         
         <p>
-            Welcome XXXX. Unfortunately the website is still under construction. <br>
-            Check back soon to be able to browse and order product.
+            <%
+                if (request.getParameter("username")!= ""){
+                out.println("Welcome " + request.getParameter("username") + ". ");
+                }
+            %>
+            Unfortunately the website is still under construction. <br>
+            Check back soon to be able to browse and order products.
         </p>
         
         
