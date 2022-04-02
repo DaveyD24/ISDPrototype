@@ -10,11 +10,24 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>login</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>This is Login!</h1>
+                <span class="whitestrip"><img src="Images/blurstrip.png" alt="Banner" height=90></span>
+        <h1>IoTBay</h1>
+
         
-        <form method="POST" action="welcome.java">
+        <ul class="Navigation">
+            <li><a href="index.html">Home</a></li>
+            <li class="Active"><a href="login.jsp">Login</a></li>
+            <li><a href="register.jsp">Register</a></li>
+            <li><a href="logout.jsp">Logout</a></li>
+
+        </ul>
+                <br><br><br><br><br><br>
+        <h2><span class="pageheading">Login</span></h2>
+        
+        <form class="formxd" method="POST" action="welcome.java">
             
             <label for="username">Username:</label><br>
             <input type="text" id="username" name="username"><br>
@@ -26,7 +39,25 @@
             
         </form>
 
-         <h5>Don't have an account? Just <a href="register.jsp">Register</a></h5>
+         <p>
+             Don't have an account? Just <a href="register.jsp">Register</a>
+         </p>
         
+         
+                 <footer>
+            
+            <ul class="foot">
+                <li class="dontH"><a>Made By Group 31 | 41025 Introduction to Software Development</a></li>
+                <li class="dontH"><a>University of Technology Sydney</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="ActFoot"><a href="login.jsp">Login</a></li>
+                <li><a href="register.jsp">Register</a></li>
+                <li><a href="logout.jsp">Logout</a></li>
+            </ul>
+            
+        </footer>
+         
+         
+         
     </body>
 </html>

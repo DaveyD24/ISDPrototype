@@ -10,11 +10,30 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Register</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>This is register!!</h1>
         
-        <form method="POST" action="welcome.jsp">
+        
+                        <span class="whitestrip"><img src="Images/blurstrip.png" alt="Banner" height=90></span>
+        <h1>IoTBay</h1>
+
+        
+        <ul class="Navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.jsp">Login</a></li>
+            <li class="Active"><a href="register.jsp">Register</a></li>
+            <li><a href="logout.jsp">Logout</a></li>
+
+        </ul>
+                <br><br><br><br><br><br>
+        
+        
+        
+        <h2><span class="pageheading">Register</span></h2>
+        
+        
+        <form class="formxd" method="POST" action="welcome.jsp">
             
             <label for="first_name">First Name:</label><br>
             <input type="text" id="first_name" name="first_name"><br>
@@ -117,6 +136,23 @@
          
             <input type="submit" value="Submit">
         </form>
+        
+                         <footer>
+            
+            <ul class="foot">
+                <li class="dontH"><a>Made By Group 31 | 41025 Introduction to Software Development</a></li>
+                <li class="dontH"><a>University of Technology Sydney</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.jsp">Login</a></li>
+                <li class="ActFoot"><a href="register.jsp">Register</a></li>
+                <li><a href="logout.jsp">Logout</a></li>
+            </ul>
+            
+        </footer>
+        
+        
+        
+        
         
     </body>
 </html>
