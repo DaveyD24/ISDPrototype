@@ -28,14 +28,19 @@
         <h2><span class="pageheading">Welcome</span></h2>
         
         <p>
+            Successfully logged in.<br>
             <%
                 if (request.getParameter("username")!= ""){
-                out.println("Welcome " + request.getParameter("username") + ". ");
+                out.println("Logged in user: " + request.getParameter("username") + ". ");
                 }
             %>
-            Unfortunately the website is still under construction. <br>
-            Check back soon to be able to browse and order products.
+            <br>
+            Proceed to <a href="main.jsp">Main Page</a>
+        
+        
+        
         </p>
+        
         
         
         

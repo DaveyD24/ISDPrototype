@@ -1,6 +1,6 @@
 <%-- 
-    Document   : login
-    Created on : 29 Mar 2022, 7:51:34 pm
+    Document   : main
+    Created on : 2 Apr 2022, 2:55:26 pm
     Author     : dtdye
 --%>
 
@@ -9,55 +9,54 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login</title>
+        <title>Main</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-                <span class="whitestrip"><img src="Images/blurstrip.png" alt="Banner" height=90></span>
+        
+                               <span class="whitestrip"><img src="Images/blurstrip.png" alt="Banner" height=90></span>
         <h1>IoTBay</h1>
 
         
         <ul class="Navigation">
             <li><a href="index.html">Home</a></li>
-            <li class="Active"><a href="login.jsp">Login</a></li>
+            <li><a href="login.jsp">Login</a></li>
             <li><a href="register.jsp">Register</a></li>
             <li><a href="logout.jsp">Logout</a></li>
 
         </ul>
                 <br><br><br><br><br><br>
-        <h2><span class="pageheading">Login</span></h2>
+        <h2><span class="pageheading">Whoops!</span></h2>
+        <p>
+                    <%
+                if (request.getParameter("username")!= ""){
+                out.println("Welcome " + request.getParameter("username") + ". ");
+                }
+            %>
         
-        <form class="formxd" method="POST" action="welcome.jsp" action="main.jsp">
-            
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username"><br>
-            
-            <label for="password">Password</label><br>
-            <input type="password" id="password" name="password"><br><br>
-            
-            <input type="submit" value="Submit">
-            
-        </form>
-
-         <p>
-             Don't have an account? Just <a href="register.jsp">Register</a>
-         </p>
+            But unfortunately the website is still under construction. <br>
+            Check back soon to be able to browse and order products.
+        </p>
         
-         
-                 <footer>
+        
+        
+        
+        
+        
+        
+        
+                                 <footer>
             
             <ul class="foot">
                 <li class="dontH"><a>Made By Group 31 | 41025 Introduction to Software Development</a></li>
                 <li class="dontH"><a>University of Technology Sydney</a></li>
                 <li><a href="index.html">Home</a></li>
-                <li class="ActFoot"><a href="login.jsp">Login</a></li>
+                <li><a href="login.jsp">Login</a></li>
                 <li><a href="register.jsp">Register</a></li>
                 <li><a href="logout.jsp">Logout</a></li>
             </ul>
             
         </footer>
-         
-         
-         
+        
     </body>
 </html>
