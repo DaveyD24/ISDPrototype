@@ -23,7 +23,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="login.jsp">Login</a></li>
             <li><a href="register.jsp">Register</a></li>
-            <li class="Active"><a href="logout.jsp">Logout</a></li>
+            <!--<li><a href="logout.jsp">Logout</a></li>-->
 
         </ul>
                 <br><br><br><br><br><br>
@@ -42,7 +42,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="login.jsp">Login</a></li>
                 <li><a href="register.jsp">Register</a></li>
-                <li class="ActFoot"><a href="logout.jsp">Logout</a></li>
+                <!--<li><a href="logout.jsp">Logout</a></li>-->
             </ul>
             
         </footer>

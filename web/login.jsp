@@ -21,13 +21,13 @@
             <li><a href="index.html">Home</a></li>
             <li class="Active"><a href="login.jsp">Login</a></li>
             <li><a href="register.jsp">Register</a></li>
-            <li><a href="logout.jsp">Logout</a></li>
+            <!--<li><a href="logout.jsp">Logout</a></li>-->
 
         </ul>
                 <br><br><br><br><br><br>
         <h2><span class="pageheading">Login</span></h2>
         
-        <form class="formxd" method="POST" action="welcome.jsp" action="main.jsp">
+        <form class="formxd" method="POST" action="welcome.jsp">
             
             <label for="username">Username:</label><br>
             <input type="text" id="username" name="username"><br>
@@ -52,7 +52,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li class="ActFoot"><a href="login.jsp">Login</a></li>
                 <li><a href="register.jsp">Register</a></li>
-                <li><a href="logout.jsp">Logout</a></li>
+                <!--<li><a href="logout.jsp">Logout</a></li>-->
             </ul>
             
         </footer>
