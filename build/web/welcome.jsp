@@ -33,9 +33,17 @@
                 if (request.getParameter("username")!= ""){
                 out.println("Logged in user: " + request.getParameter("username") + ". ");
                 }
+                session.setAttribute("userinput", request.getParameter("username"));
+            
             %>
+            
+            
             <br>
-            Proceed to <a href="main.jsp">Main Page</a>
+            Proceed to <a href="main.jsp">Main Page</a><br>
+            
+            <?php
+            echo "bruh";
+            ?>
         
         
         

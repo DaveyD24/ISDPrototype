@@ -29,11 +29,9 @@
         <h2><span class="pageheading">Whoops!</span></h2>
         <p>
                     <%
-                if (request.getParameter("username")!= ""){
-                out.println("Welcome " + request.getParameter("username") + ". ");
-                }
+                            String name = (String)session.getAttribute("userinput");
+                            out.println("Welcome " + name + ". ");
             %>
-        
             But unfortunately the website is still under construction. <br>
             Check back soon to be able to browse and order products.
         </p>

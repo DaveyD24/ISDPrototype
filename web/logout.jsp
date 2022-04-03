@@ -29,6 +29,10 @@
                 <br><br><br><br><br><br>
         <h2><span class="pageheading">Logout</span></h2>
         
+        <%
+            session.invalidate();
+            %>
+        
         <p>
             Thank you for using IoTBay. You have been logged out <br>
             <a href="index.html">Return to the main page</a>
