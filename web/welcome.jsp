@@ -41,9 +41,6 @@
             <br>
             Proceed to <a href="main.jsp">Main Page</a><br>
             
-            <?php
-            echo "bruh";
-            ?>
         
         
         

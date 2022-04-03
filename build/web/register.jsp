@@ -35,6 +35,9 @@
         
         <form class="formxd" method="POST" action="welcome.jsp">
             
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br><br>
+            
             <label for="first_name">First Name:</label><br>
             <input type="text" id="first_name" name="first_name"><br>
             
