@@ -54,3 +54,7 @@
         
     </body>
 </html>
+
+<!--
+Invalidate the session (this might get done in the previous page that calls this page)
+display message: logged out-->

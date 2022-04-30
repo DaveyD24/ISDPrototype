@@ -13,18 +13,20 @@ public class Product {
     String name;
     String description;
     String category;
-    int quantity;
+    int stock;
     boolean available;
     String manufacturer;
     double price;
     
-    public Product(String name, String description, String category, int quantity, boolean available, String manufacturer, double price) {
+    public Product(String name, String description, String category, int stock, boolean available, String manufacturer, double price) {
         this.name = name;
         this.description = description;
-        this.quantity = quantity;
+        this.stock = stock;
         this.available = available;
         this.manufacturer = manufacturer;
         this.price = price;
     }
+    
+    
     
 }

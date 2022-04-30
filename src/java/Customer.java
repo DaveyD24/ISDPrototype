@@ -9,22 +9,19 @@
  * @author dtdye
  */
 public class Customer {
+    int ID;
     String email;
     String first_name;
     String last_name;
-    String gender;
-    String DOB;
-    String username;
     String password;
+    Log[] logs;
     
     
-    public Customer(String email, String first_name, String last_name, String gender, String DOB, String username, String password) {
+    public Customer(int ID, String email, String first_name, String last_name, String gender, String DOB, String username, String password) {
+        this.ID = ID;
         this.email = email;
         this.first_name = first_name;
         this.last_name = last_name;
-        this.gender = gender;
-        this.DOB = DOB;
-        this.username = username;
         this.password = password;
     }
     

@@ -27,21 +27,22 @@
                 <br><br><br><br><br><br>
         <h2><span class="pageheading">Login</span></h2>
         
-        <form class="formxd" method="POST" action="welcome.jsp">
+            <!-- CONTENT STARTS 
             
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username"><br>
             
-            <label for="password">Password</label><br>
-            <input type="password" id="password" name="password"><br><br>
             
-            <input type="submit" value="Submit">
             
-        </form>
-
-         <p>
-             Don't have an account? Just <a href="register.jsp">Register</a>
-         </p>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            CONTENT ENDS
+            -->
         
          
                  <footer>
@@ -61,3 +62,14 @@
          
     </body>
 </html>
+
+<!-- MARC
+//form
+//username(email), password
+
+//validate boxes
+//if (customer) -> go to customermain
+if (staff) -> go to staffmain'
+
+for now, just check for hardcoded values (if user inputs customer@gmail.com go to customer etc)
+-->

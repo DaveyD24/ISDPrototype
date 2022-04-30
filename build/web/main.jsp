@@ -27,14 +27,9 @@
         </ul>
                 <br><br><br><br><br><br>
         <h2><span class="pageheading">Whoops!</span></h2>
-        <p>
-                    <%
-                            String name = (String)session.getAttribute("userinput");
-                            out.println("Welcome " + name + ". ");
-            %>
-            But unfortunately the website is still under construction. <br>
-            Check back soon to be able to browse and order products.
-        </p>
+
+        
+        <!-- CONTENT STARTS HERE
         
         
         
@@ -43,6 +38,13 @@
         
         
         
+        
+        
+        
+        
+        
+        CONTENT ENDS HERE
+        -->
                                  <footer>
             
             <ul class="foot">
@@ -58,3 +60,16 @@
         
     </body>
 </html>
+
+
+<!-- DAVID
+//keep track of currently logged in user
+//options: browse catalogue (this page), logout
+
+//search bar
+//list all products
+//for each product: Add to cart, validate: stock doesnt go below 0,
+creates new Order()  ^^
+
+Checkout button -> checkout.jsp
+-->
