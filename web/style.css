@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : 30 Mar 2022, 1:41:59 pm
     Author     : Davey D
 */
+
 h1{
     font-family: Verdana, Geneva, sans-serif;
     position: fixed;
@@ -25,7 +26,24 @@ form.formxd {
 
 body {
     background-image: url(Images/SkyBlue4.jpg);
+    margin-left: 20px;
+        font-family: Verdana, Geneva, sans-serif;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.Search {
+    width: 28%;
+}
+
+td {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 
 p {
     font-family: Verdana, Geneva, sans-serif;

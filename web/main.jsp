@@ -26,10 +26,48 @@
 
         </ul>
                 <br><br><br><br><br><br>
-        <h2><span class="pageheading">Whoops!</span></h2>
+        <h2><span class="pageheading">IoTBay</span></h2>
 
         
-        <!-- CONTENT STARTS HERE
+        <!-- CONTENT STARTS HERE -->
+        
+        <p>Currently logged in as: user</p>
+        <input type="text" class="Search" placeholder="Search Products.."><br><br>
+        
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Cool product brah</td>
+                <td>$129.99</td>
+                <td>In Stock</td>
+                <td>
+                    <button type="button">Add To Cart</button>
+                </td>
+            </tr>
+                        <tr>
+                <td>Cool product brah</td>
+                <td>$129.99</td>
+                <td>In Stock</td>
+                <td>
+                    <button type="button">Add To Cart</button>
+                </td>
+            </tr>
+                        <tr>
+                <td>Cool product brah</td>
+                <td>$129.99</td>
+                <td>In Stock</td>
+                <td>
+                    <button type="button">Add To Cart</button>
+                </td>
+            </tr>
+        </table><br>
+        
+        <a href="checkout.jsp"><button type="button">Checkout</button></a>
         
         
         
@@ -40,9 +78,7 @@
         
         
         
-        
-        
-        
+        <!--
         CONTENT ENDS HERE
         -->
                                  <footer>

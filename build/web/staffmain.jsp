@@ -31,7 +31,47 @@
         <!-- CONTENT BODY STARTS HERE -->
         
         
+                <p>Currently logged in as: staff</p>
+                
+                <a href="UpdateProduct.jsp"><button type="button">Update Products</button></a>
+                <a href="UpdateCustomer.jsp"><button type="button">Update Customers</button></a><br>
+                
+        <input type="text" class="Search" placeholder="Search Products.."><br><br>
         
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Cool product brah</td>
+                <td>$129.99</td>
+                <td>In Stock</td>
+                <td>
+                    <button type="button">Add To Cart</button>
+                </td>
+            </tr>
+                        <tr>
+                <td>Cool product brah</td>
+                <td>$129.99</td>
+                <td>In Stock</td>
+                <td>
+                    <button type="button">Add To Cart</button>
+                </td>
+            </tr>
+                        <tr>
+                <td>Cool product brah</td>
+                <td>$129.99</td>
+                <td>In Stock</td>
+                <td>
+                    <button type="button">Add To Cart</button>
+                </td>
+            </tr>
+        </table><br>
+        
+        <a href="checkout.jsp"><button type="button">Checkout</button></a>
         
         
         
