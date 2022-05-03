@@ -59,7 +59,42 @@
     </body>
 </html>
 
+<title>Shipment</title>
+<body>
 
+
+
+<form action="shipping.jsp" method="post">
+    <h2>Enter Shipping Details</h2>
+     <label for="fullName" class="label" >Full Name</label><br>
+    <input type="text" class="form" placeholder="John Doe"required accept="text/plain" tile="Please enter your name"><br>
+
+<label >Shipping Address</label><br>
+    <input type="text" class="form" placeholder="5 Magnolia Drive,Kingsway West"required><br>
+    <label for="Postcode">Postcode</label><br>
+    <input type="text" pattern="[0-9]{4}" placeholder="2208"required ><br>
+    <label for="State">State</label><br>
+    <select id="state" name="state" placeholder="New South Wales"required>
+    <option value="New South Wales">NSW</option>
+    <option value="Queensland">QLD</option>
+    <option value="Victoria">VIC</option>
+    <option value="Tasmania">TAS</option>
+    <option value="South Australia">SA</option>
+    <option value="Northern Territory">NT</option>
+    <option value="Western Australia">WA</option>
+        
+    </select><br>
+
+   <label for="shippingDate" class="form">Shipping Date</label><br>
+    <input type="date" value="03/05/2022" min="04/05/2022" max="05/05/2023"required><br>
+    
+    <label for="contactNumber" class="form">Contact Number</label><br>
+    <input type="tel" pattern="[0-9]{9}" placeholder="+61 426-XXX-XXX"required><br>
+    <input type="checkbox" >Save as default shipping detail<br>
+    <input type="submit" value="Proceed to Checkout" rel="www.google.com"><br>
+    </form>
+    </body>
+    </head>
 <!-- SUB
 
 <Form>
