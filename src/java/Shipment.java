@@ -8,6 +8,25 @@
  *
  * @author dtdye
  */
+
 public class Shipment {
+    int ID;
+    String first_name;
+    String last_name;
+    String address;
+    String city;
+    String state;
+    int zip;
+    
+    public Shipment(int ID, String first_name, String last_name, String address, String city, String state, int zip) {
+        this.ID = ID;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.address = address;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
+    }
+    
     
 }

@@ -68,7 +68,7 @@ public class ProductController {
             }
         }
         
-        if (product_to_update != null) {
+        if (product_to_update != null) {    
             product_to_update.stock += amount;
             //Update in database
         }
