@@ -16,8 +16,8 @@ public class OrderController {
     LinkedList<Order> orders = new LinkedList<Order>();
     
     
-    public void CreateOrder(int quantity, Product initial_product, String delivery_address) {
-        Order order = new Order(quantity, initial_product, delivery_address);
+    public void CreateOrder(int ID, int quantity, Product initial_product, String delivery_address) {
+        Order order = new Order(ID, quantity, initial_product, delivery_address);
         orders.add(order);
         //Add to database
     }

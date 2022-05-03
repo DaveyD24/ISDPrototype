@@ -10,6 +10,7 @@
  */
 public class Product {
     
+    int ID;
     String name;
     String description;
     String category;
@@ -18,7 +19,7 @@ public class Product {
     String manufacturer;
     double price;
     
-    public Product(String name, String description, String category, int stock, boolean available, String manufacturer, double price) {
+    public Product(int ID, String name, String description, String category, int stock, boolean available, String manufacturer, double price) {
         this.name = name;
         this.description = description;
         this.stock = stock;

@@ -18,7 +18,7 @@ public class Order {
     LinkedList<Product> products;
     String delivery_address;
     
-    public Order(int quantity, Product initial_product, String delivery_address) {
+    public Order(int ID, int quantity, Product initial_product, String delivery_address) {
         this.quantity = quantity;
         
         this.products =  new LinkedList<Product>();
