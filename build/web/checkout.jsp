@@ -28,17 +28,43 @@
         <h2><span class="pageheading">Checkout</span></h2>
         
         <!-- CONTENT STARTS HERE -->
+        <button type="button"><a href = "">Order history list</a></button>
+            <table class="test">
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>item 1</td>
+                    <td>2</td>
+                    <td>$25</td>
+                </tr>
+                <tr>
+                    <td>item 2</td>
+                    <td>1</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>item 3</td>
+                    <td>3</td>
+                    <td>$5</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Total:</td>
+                    <td>$165</td>
+                </tr>
+            </table>
         
+        <br>
         
+        <button type="button"><a href = "index.html">Cancel</a></button>
+        <button type="button"><a href = "payment.jsp">Buy Now</a></button>
         
+        <br><br><br><br>
         
-        
-        
-        
-        
-        
-        
-        
+
         
         
         <!-- CONTENT ENDS HERE -->
