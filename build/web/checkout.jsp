@@ -11,6 +11,31 @@
         <link rel="stylesheet" href="style.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Checkout</title>
+        <style>
+        table {
+        border: 1px solid;
+        }
+        tr {
+        height: 50px;
+        border: 1px solid;
+        padding: 15px;
+        }
+        th {
+        height: 50px;
+        border: 1px solid;
+        width: 65%;
+        padding: 15px;
+        background-color: #04AA6D;
+        color: white;
+        }
+        td {
+            padding-left: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            
+        }
+        </style>
     </head>
     <body>
                 <span class="whitestrip"><img src="Images/blurstrip.png" alt="Banner" height=90></span>
