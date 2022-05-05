@@ -32,10 +32,64 @@
         <!-- CONTENT BODY STARTS HERE -->
         
         
+        <!-- LARISSA
+<form>
+Product id
+</form>
+        
+            int ID;
+    String name;
+    String description;
+    String category;
+    int stock;
+    boolean available;
+    String manufacturer;
+    double price;
+
+<form>
+display form similar to login to override existing details
+validate all boxes (just checking user isnt inputting random shit)
+submit button
+</form>
+-->
         
         
+                <form>
+            <label for="product_id">Enter Product ID:</label>
+            <input type="number" id="product_id" name="product_id">
+        </form>
         
+        <!-- In the real program, right here we would match the users input to an actual customer in our database-->
+        <!-- For now, lets pretend the input is valid -->
         
+        <p>Success! Enter new details for customer [id] below</p><br>
+        
+        <form>
+            <label for="product_name">Name: </label>
+            <input type="text" id="product_name" name="product_name"><br>
+            
+            <label for="description">Description</label>
+            <input type="text" id="description" name="description" class="fat"><br>
+            
+            <label for="category">Category: </label>
+            <input type="text" id="category" name="category"><br>
+            
+            <label for="stock">Stock:</label>
+            <input type="number" id="stock" name="stock"><br>
+            
+            <label for="available">Available</label>
+            <input type="checkbox" id="available" name="available"><br>
+            
+            <label for="manufacturer">Manufacturer:</label>
+            <input type="text" id="manufacturer" name="manufacturer"><br>
+            
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price"><br>
+            
+            
+        </form>
+        
+        <button>Overwrite</button>
         
         
         
