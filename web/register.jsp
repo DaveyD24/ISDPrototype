@@ -19,7 +19,7 @@
                 <ul class="Navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="login.jsp">Login</a></li>
-            <li><a href="register.jsp">Register</a></li>
+            <li class="Active"><a href="register.jsp">Register</a></li>
             <li><a href="logout.jsp">Logout</a></li>
 
         </ul>
