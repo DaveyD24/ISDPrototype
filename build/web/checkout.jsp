@@ -11,6 +11,31 @@
         <link rel="stylesheet" href="style.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Checkout</title>
+        <style>
+        table {
+        border: 1px solid;
+        }
+        tr {
+        height: 50px;
+        border: 1px solid;
+        padding: 15px;
+        }
+        th {
+        height: 50px;
+        border: 1px solid;
+        width: 65%;
+        padding: 15px;
+        background-color: #04AA6D;
+        color: white;
+        }
+        td {
+            padding-left: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            
+        }
+        </style>
     </head>
     <body>
                 <span class="whitestrip"><img src="Images/blurstrip.png" alt="Banner" height=90></span>
@@ -28,17 +53,43 @@
         <h2><span class="pageheading">Checkout</span></h2>
         
         <!-- CONTENT STARTS HERE -->
+        <button type="button"><a href = "">Order history list</a></button>
+            <table class="test">
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>item 1</td>
+                    <td>2</td>
+                    <td>$25</td>
+                </tr>
+                <tr>
+                    <td>item 2</td>
+                    <td>1</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>item 3</td>
+                    <td>3</td>
+                    <td>$5</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Total:</td>
+                    <td>$165</td>
+                </tr>
+            </table>
         
+        <br>
         
+        <button type="button"><a href = "index.html">Cancel</a></button>
+        <button type="button"><a href = "payment.jsp">Buy Now</a></button>
         
+        <br><br><br><br>
         
-        
-        
-        
-        
-        
-        
-        
+
         
         
         <!-- CONTENT ENDS HERE -->
@@ -62,9 +113,7 @@
 <!-- NATHAN
 List of products in cart (random hardcoded products for now)
 Foreach product: Product name, quantity, price
-
 Total cost of cart
-
 Go To Payment button -> payment.jsp
 Return To Main Page button
 -->

@@ -7,7 +7,6 @@ and open the template in the editor.
     Created on : 30 Mar 2022, 1:41:59 pm
     Author     : Davey D
 */
-
 h1{
     font-family: Verdana, Geneva, sans-serif;
     position: fixed;
@@ -26,24 +25,7 @@ form.formxd {
 
 body {
     background-image: url(Images/SkyBlue4.jpg);
-    margin-left: 20px;
-        font-family: Verdana, Geneva, sans-serif;
 }
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-.Search {
-    width: 28%;
-}
-
-td {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 
 p {
     font-family: Verdana, Geneva, sans-serif;
@@ -140,6 +122,51 @@ li.dontH a:hover {
     color: white;
 }
 
+.paymain{
+    padding-left: 20px;
+}
+
+.paybox{
+    background-color: #ffffff;
+    width: 350px;
+    border-radius: 10px;
+}
+.paymentfull{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
 
 
+.name{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 25px;
+}
 
+.cnum{
+    padding-bottom: 30px;
+    padding-left: 25px;
+}
+
+.expdate{
+    padding-bottom: 30px;
+    padding-left: 25px;
+}
+
+.check{
+    padding-left: 25px;
+}
+
+.col{
+    padding-left: 25px;
+    padding-bottom: 30px;
+}
+
+.card{
+    padding-left: 25px;
+}
+
+.check1{
+    padding-bottom: 10px;
+}
