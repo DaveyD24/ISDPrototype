@@ -122,6 +122,56 @@ li.dontH a:hover {
     color: white;
 }
 
+.paymain{
+    padding-left: 20px;
+}
+
+.paybox{
+    background-color: #ffffff;
+    width: 350px;
+    border-radius: 10px;
+}
+.paymentfull{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+
+.name{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+.cnum{
+    padding-bottom: 30px;
+    padding-left: 25px;
+}
+
+.expdate{
+    padding-bottom: 30px;
+    padding-left: 25px;
+}
+
+.check{
+    padding-left: 25px;
+}
+
+.col{
+    padding-left: 25px;
+    padding-bottom: 30px;
+}
+
+.card{
+    padding-left: 25px;
+}
+
+.check1{
+    padding-bottom: 10px;
+}
+
+
 
 
 
