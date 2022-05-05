@@ -89,7 +89,7 @@
             <br>
                     <div class="submit">
                         
-        <a href="shipping.jsp"><input type="submit" value="Make payment" class="btn">
+        <input type="submit" value="Make payment" class="btn">
             </div>
             </div>
         </div>
