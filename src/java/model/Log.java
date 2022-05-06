@@ -1,3 +1,5 @@
+package model;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,6 +10,8 @@
  *
  * @author dtdye
  */
+
+
 public class Log {
     
     int customer_id;
@@ -20,6 +24,10 @@ public class Log {
         this.login_time = login_time;
         this.logout_time = logout_time;
         this.date = date;
+    }
+    
+    public int test(int num1, int num2) {
+        return num1 * num2;
     }
     
     

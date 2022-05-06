@@ -1,4 +1,7 @@
+package controller;
 
+
+import model.Product;
 import java.beans.Statement;
 import java.util.LinkedList;
 

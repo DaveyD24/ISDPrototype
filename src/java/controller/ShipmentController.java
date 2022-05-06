@@ -1,4 +1,7 @@
+package controller;
 
+
+import model.Shipment;
 import java.util.LinkedList;
 
 /*

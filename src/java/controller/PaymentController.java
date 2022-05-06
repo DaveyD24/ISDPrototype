@@ -1,4 +1,7 @@
+package controller;
 
+
+import model.Payment;
 import java.util.LinkedList;
 
 /*

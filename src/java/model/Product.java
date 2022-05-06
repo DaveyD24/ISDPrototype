@@ -1,3 +1,5 @@
+package model;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,14 +12,14 @@
  */
 public class Product {
     
-    int ID;
-    String name;
-    String description;
-    String category;
-    int stock;
-    boolean available;
-    String manufacturer;
-    double price;
+    public int ID;
+    public String name;
+    public String description;
+    public String category;
+    public int stock;
+    public boolean available;
+    public String manufacturer;
+    public double price;
     
     public Product(int ID, String name, String description, String category, int stock, boolean available, String manufacturer, double price) {
         this.name = name;

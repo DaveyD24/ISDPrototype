@@ -1,3 +1,5 @@
+package model;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,14 +12,14 @@
  */
 public class Payment {
     
-    int ID;
-    int customer_ID;
-    String name;
-    int card_number;
-    int CVV;
-    String expiry;
-    boolean mastercard;
-    boolean visa;
+    public int ID;
+    public int customer_ID;
+    public String name;
+    public int card_number;
+    public int CVV;
+    public String expiry;
+    public boolean mastercard;
+    public boolean visa;
     
     public Payment(int customer_ID, int ID, String name, int card_number, int CVV, String expiry, boolean mastercard) {
         this.customer_ID = customer_ID;
