@@ -14,6 +14,7 @@ import java.util.LinkedList;
 public class Order {
     
     int ID;
+    int customer_ID;
     int quantity;
     LinkedList<Product> products;
     String delivery_address;

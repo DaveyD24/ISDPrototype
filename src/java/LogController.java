@@ -11,7 +11,10 @@
 public class LogController {
     
     
-    
+   public void CreateLog(int customer_ID, String login_time, String logout_time, String date) {
+       Log log = new Log(customer_ID, login_time, logout_time, date);
+       //Add to database
+   } 
     
     
     

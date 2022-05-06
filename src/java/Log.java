@@ -14,11 +14,12 @@ public class Log {
     String login_time;
     String logout_time;
     String date;
-    Order[] orders;
     
-    public Log(int customer_id, String login_time, String logout_time, String date, Order[] orders) {
+    public Log(int customer_id, String login_time, String logout_time, String date) {
         this.customer_id = customer_id;
-        //blaaaa
+        this.login_time = login_time;
+        this.logout_time = logout_time;
+        this.date = date;
     }
     
     
