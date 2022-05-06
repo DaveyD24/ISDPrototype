@@ -21,6 +21,7 @@
             <li><a href="login.jsp">Login</a></li>
             <li><a href="register.jsp">Register</a></li>
             <li><a href="logout.jsp">Logout</a></li>
+            <li><a href="account.jsp">My Account</a></li>
 
         </ul>
                 <br><br><br><br><br><br>
@@ -95,6 +96,8 @@
         </div>
 </div>
       </form>
+            <a href="checkout.jsp"><button>Back</button></a>
+            <a href="shipping.jsp"><button>Continue</button></a>
         </div>
         <br><br><br><br><br>
         
@@ -108,6 +111,7 @@
                 <li class="ActFoot"><a href="login.jsp">Login</a></li>
                 <li><a href="register.jsp">Register</a></li>
                 <li><a href="logout.jsp">Logout</a></li>
+                <li><a href="account.jsp">My Account</a></li>
             </ul>
             
         </footer>

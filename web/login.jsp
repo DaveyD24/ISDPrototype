@@ -35,11 +35,11 @@
                 <label for="password">Password:</label><br>
                 <input type="password" id="loginPassword" name="loginPassword"><br><br>
                 <!-- Password Label and Textfield -->
-                <input type="submit" value="Submit">
+                <!--<input type="submit" value="Submit">-->
                 <!-- Submit button -->    
             </form>
             
-            
+            <button onclick="onLogin()">Login</button>
             
             
             <!-- CONTENT ENDS -->
@@ -58,6 +58,17 @@
             
         </footer>
          
+            
+            <script>
+                
+                function onLogin() {
+                    window.location.href = "main.jsp";
+                }
+                
+                
+            </script>
+            
+            
          
          
     </body>

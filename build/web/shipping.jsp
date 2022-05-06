@@ -22,6 +22,7 @@
             <li><a href="login.jsp">Login</a></li>
             <li><a href="register.jsp">Register</a></li>
             <li><a href="logout.jsp">Logout</a></li>
+            <li><a href="account.jsp">My Account</a></li>
 
         </ul>
                 <br><br><br><br><br><br>
@@ -51,6 +52,7 @@
                 <li class="ActFoot"><a href="login.jsp">Login</a></li>
                 <li><a href="register.jsp">Register</a></li>
                 <li><a href="logout.jsp">Logout</a></li>
+                <li><a href="account.jsp">My Account</a></li>
             </ul>
             
         </footer>
@@ -91,8 +93,11 @@
     <label for="contactNumber" class="form">Contact Number</label><br>
     <input type="tel" pattern="[0-9]{9}" placeholder="+61 426-XXX-XXX"required><br>
     <input type="checkbox" >Save as default shipping detail<br>
-    <input type="submit" value="Proceed to Checkout" rel="www.google.com"><br>
+    <!--<input type="submit" value="Proceed to Checkout" rel="www.google.com"><br>-->
     </form>
+    
+    <a href="main.jsp"><button>Complete Order</button></a>
+    
     </body>
     </head>
 <!-- SUB

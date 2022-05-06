@@ -47,13 +47,13 @@
             <li><a href="login.jsp">Login</a></li>
             <li><a href="register.jsp">Register</a></li>
             <li><a href="logout.jsp">Logout</a></li>
+            <li><a href="account.jsp">My Account</a></li>
 
         </ul>
                 <br><br><br><br><br><br>
         <h2><span class="pageheading">Checkout</span></h2>
         
         <!-- CONTENT STARTS HERE -->
-        <button type="button"><a href = "">Order history list</a></button>
             <table class="test">
                 <tr>
                     <th>Product</th>
@@ -84,8 +84,8 @@
         
         <br>
         
-        <button type="button"><a href = "index.html">Cancel</a></button>
-        <button type="button"><a href = "payment.jsp">Buy Now</a></button>
+        <a href = "main.jsp"><button type="button">Cancel</button></a>
+        <a href = "payment.jsp"><button type="button">Buy Now</button></a>
         
         <br><br><br><br>
         
@@ -102,6 +102,7 @@
                 <li class="ActFoot"><a href="login.jsp">Login</a></li>
                 <li><a href="register.jsp">Register</a></li>
                 <li><a href="logout.jsp">Logout</a></li>
+                <li><a href="account.jsp">My Account</a></li>
             </ul>
             
         </footer>

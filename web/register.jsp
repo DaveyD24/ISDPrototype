@@ -20,7 +20,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="login.jsp">Login</a></li>
             <li class="Active"><a href="register.jsp">Register</a></li>
-            <li><a href="logout.jsp">Logout</a></li>
+            <!--<li><a href="logout.jsp">Logout</a></li>-->
 
         </ul>
                 <br><br><br><br><br><br>
@@ -51,7 +51,7 @@
             
 
         </form>
-         
+        <button onclick="onRegister()">Register</button>
         
         <!-- CONTENT ENDS HERE -->
        
@@ -62,11 +62,19 @@
                 <li><a href="index.html">Home</a></li>
                 <li class="ActFoot"><a href="login.jsp">Login</a></li>
                 <li><a href="register.jsp">Register</a></li>
-                <li><a href="logout.jsp">Logout</a></li>
+                <!--<li><a href="logout.jsp">Logout</a></li>-->
             </ul>
             
         </footer>
         
+        
+        <script>
+            
+            function onRegister() {
+                window.location.href = "login.jsp"
+            }
+            
+        </script>
    
     </body>
 </html>
