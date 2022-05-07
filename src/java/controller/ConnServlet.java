@@ -92,7 +92,10 @@ import DAO.DBManager;
 
            //export the DB manager to the view-session (JSPs)
 
-           session.setAttribute("manager", manager);           
+           session.setAttribute("manager", manager); 
+           
+           CustomerController customerController = new CustomerController(session);
+           session.setAttribute("customerController", customerController);
 
        }   
 

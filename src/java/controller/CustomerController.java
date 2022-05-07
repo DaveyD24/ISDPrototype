@@ -11,17 +11,25 @@ package controller;
  * @author dtdye
  */
 
+import DAO.DBManager;
 import model.Customer;
 import java.util.LinkedList;
+import javax.servlet.http.HttpSession;
 
 public class CustomerController {
     
     LinkedList<Customer> customers = new LinkedList<Customer>();
+    //DBManager manager = session.getAttribute("manager");
+    
+    public CustomerController(HttpSession session) {
+        
+    }
     
     public void AddCustomer(int ID, String email, String first_name, String last_name, String password) {
         Customer customer = new Customer(ID, email, first_name, last_name, password);
         customers.add(customer);
         //Add to database
+        //dbManager.addCustomer(ID, email, first_name, last_name, password);
     }
     
     public void UpdateCustomer(int ID, String email, String first_name, String last_name, String password) {

@@ -53,6 +53,10 @@ public void deleteUser(String email) throws SQLException{
 
 }
 
+public void addCustomer(int ID, String email, String first_name, String last_name, String password) throws SQLException {
+    st.executeUpdate("INSERT INTO Customers " + "VALUES (1001, 'xdd@xdd.com', 'David', 'Dyer', passwordxd)");
+}
+
 
  
 
