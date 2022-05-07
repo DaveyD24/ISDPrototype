@@ -28,18 +28,19 @@
         <h2><span class="pageheading">Login</span></h2>
         
             <!-- CONTENT STARTS -->
-            <form class="formxd" method="POST" action="welcome.jsp">
+            <form class="formxd" method="POST" action="LoginServlet">
                 <label for="username"> Username:</label><br>
                 <input type="text" id="loginUsername" name="loginUsername"><br><br>
+                
                 <!-- Username Label and Textfield -->
                 <label for="password">Password:</label><br>
                 <input type="password" id="loginPassword" name="loginPassword"><br><br>
                 <!-- Password Label and Textfield -->
-                <!--<input type="submit" value="Submit">-->
+                <input type="submit" value="Submit">
                 <!-- Submit button -->    
             </form>
             
-            <button onclick="onLogin()">Login</button>
+            <!--<button onclick="onLogin()">Login</button>-->
             
             <!-- CONTENT ENDS -->
         

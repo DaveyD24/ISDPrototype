@@ -4,7 +4,6 @@
     Author     : dtdye
 --%>
 
-<%@page import="controller.CustomerController"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -72,10 +71,7 @@
         <script>
             
             function onRegister() {
-                //CustomerController xd = session.getAttribute("customerController");
-                //xd.addCustomer();
-                <% CustomerController controller = (CustomerController)session.getAttribute("customerController");
-                    controller.AddCustomer(3, "xd", "xd", "xd", "xd"); %>
+
                 window.location.href = "login.jsp";
             }
             

@@ -19,17 +19,20 @@ import javax.servlet.http.HttpSession;
 public class CustomerController {
     
     LinkedList<Customer> customers = new LinkedList<Customer>();
+    HttpSession session;
+    DBManager manager;
     //DBManager manager = session.getAttribute("manager");
     
     public CustomerController(HttpSession session) {
-        
+        this.session = session;
     }
     
     public void AddCustomer(int ID, String email, String first_name, String last_name, String password) {
         Customer customer = new Customer(ID, email, first_name, last_name, password);
         customers.add(customer);
         //Add to database
-        //dbManager.addCustomer(ID, email, first_name, last_name, password);
+        DBManager manager = (DBManager)session.getAttribute("manager");
+        //manager.addCustomer(ID, email, first_name, last_name, password);
     }
     
     public void UpdateCustomer(int ID, String email, String first_name, String last_name, String password) {
