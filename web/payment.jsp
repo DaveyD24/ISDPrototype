@@ -56,7 +56,7 @@
             <div class ="cnum">
             <label for="cnum">Credit Card Number</label>
             <br><br>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="" maxlength="12" required/>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="" maxlength="16" required/>
             </div>
             <div class ="expdate">
             <label for="expdate">Expiry Date</label>
