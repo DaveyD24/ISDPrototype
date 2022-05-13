@@ -54,17 +54,15 @@ submit button
 -->
         
         
-                <form>
+                <form class="updateForm" action="UpdateProductServlet" method="POST">
             <label for="product_id">Enter Product ID:</label>
             <input type="number" id="product_id" name="product_id">
-        </form>
         
         <!-- In the real program, right here we would match the users input to an actual customer in our database-->
         <!-- For now, lets pretend the input is valid -->
         
-        <p>Success! Enter new details for customer [id] below</p><br>
         
-        <form>
+
             <label for="product_name">Name: </label>
             <input type="text" id="product_name" name="product_name"><br>
             
@@ -85,15 +83,11 @@ submit button
             
             <label for="price">Price:</label>
             <input type="number" id="price" name="price"><br>
-            
-            
+
+            <input type="submit" value="Overwrite" class="btn">
         </form>
         
-        <button>Overwrite</button>
-        
-        
-        
-        
+        <p id="UPerrorMessage" name="UPerrorMessage"></p><br>
         
         
         

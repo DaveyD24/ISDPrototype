@@ -26,26 +26,6 @@ public class UpdateCustomerServlet extends HttpServlet{
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
-        /*
-                    <label for="customer_id">Enter Customer ID:</label>
-            <input type="number" id="customer_id" name="customer_id">
-
-        <!-- In the real program, right here we would match the users input to an actual customer in our database-->
-        <!-- For now, lets pretend the input is valid -->
-
-            <label for="first_name">First Name: </label>
-            <input type="text" id="first_name" name="first_name"><br>
-            
-            <label for="last_name">Last Name: </label>
-            <input type="text" id="last_name" name="last_name"><br>
-            
-            <label for="password">Password: </label>
-            <input type="password" id="password" name="password"><br>
-            
-            <label for="log">Keep existing logs?</label>
-            <input type="checkbox" id="log" name="log"><br><br>
-        */
-
         HttpSession session = request.getSession();
         Validator validator = new Validator();
         DBManager manager = (DBManager) session.getAttribute("manager");
@@ -65,6 +45,7 @@ public class UpdateCustomerServlet extends HttpServlet{
             request.getRequestDispatcher("UpdateCustomer.jsp").include(request, response);
         }
         else {
+            
             customer = manager.getCustomerByID(customer_ID);
             if (customer == null) {
                 errorMessage = "No such customer in the database";

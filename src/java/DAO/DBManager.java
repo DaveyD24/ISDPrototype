@@ -120,6 +120,14 @@ public void updateCustomer(String customer_ID, String first_name, String last_na
     
 }
 
+public void updateProduct(String product_ID, String name, String description, String category, int stock, boolean available, String price) {
+    
+}
+
+public Product getProductByID(String product_ID) {
+    return null;
+}
+
 
 
 
