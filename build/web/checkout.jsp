@@ -4,6 +4,9 @@
     Author     : dtdye
 --%>
 
+<%@page import="java.util.HashSet"%>
+<%@page import="java.util.Set"%>
+<%@page import="product_package.Product"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -53,7 +56,20 @@
         <h2><span class="pageheading">Checkout</span></h2>
         
         <!-- CONTENT STARTS HERE -->
-        <button type="button"><a href = "">Order history list</a></button>
+        
+        <%!
+        %>
+        
+        <%
+            session.setAttribute("quantity1", "5");
+            session.setAttribute("quantity2", "2");
+            session.setAttribute("quantity3", "3");
+            //Product product = (Product)session.getAttribute("product");
+        %>
+        
+       
+        <form action="OrderHistory.jsp" method="post">
+            <button type="button"><a href = "OrderHistory.jsp">Order history list</a></button>
             <table class="test">
                 <tr>
                     <th>Product</th>
@@ -62,35 +78,46 @@
                 </tr>
                 <tr>
                     <td>item 1</td>
-                    <td>2</td>
+                    <td><input type="text" id ="quantity1" name = "quantity1" value ="<%out.println(session.getAttribute("quantity1").toString());%>" required="true"></td>
                     <td>$25</td>
                 </tr>
                 <tr>
                     <td>item 2</td>
-                    <td>1</td>
+                    <td><input type="text" id ="quantity2" name = "quantity2" value = "<%out.println(session.getAttribute("quantity2").toString());%>" required="true"></td>
                     <td>$100</td>
                 </tr>
                 <tr>
                     <td>item 3</td>
-                    <td>3</td>
+                    <td><input type="text" id ="quantity3" name = "quantity3" value = "<%out.println(session.getAttribute("quantity3").toString());%>" required = "true"></td>
                     <td>$5</td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>Total:</td>
-                    <td>$165</td>
+                    <td><label id ="price_label" for="price">...</label></td>
                 </tr>
             </table>
         
         <br>
         
-        <button type="button"><a href = "index.html">Cancel</a></button>
-        <button type="button"><a href = "payment.jsp">Buy Now</a></button>
+        <%
+            //Product product = new Product("Google Home", "A google home", "home", 150.0, 20);
+            //Product product2 = new Product("Amazon Echo", "A amazon echo", "technology", 210.2, 15);
+            //Product product3 = new Product("August DoorBell Cam", "A august doorbell cam", "home", 54.5, 90);
+            //session.setAttribute("product", product);
+            //session.setAttribute("product2", product2);
+            //session.setAttribute("product3", product3);
+    
+        %>
+        
+        
+        <a href = "index.html">Cancel</a>
+        <input type="submit" value="Continue">
+        </form>
+                    
+        
         
         <br><br><br><br>
-        
-
-        
         
         <!-- CONTENT ENDS HERE -->
        
@@ -118,4 +145,9 @@ Total cost of cart
 
 Go To Payment button -> payment.jsp
 Return To Main Page button
+-->
+
+<!--
+The payment page needs to receive the total cost of the cart and the purchased items from this page.
+
 -->
