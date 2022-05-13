@@ -84,8 +84,8 @@
         
         <br>
         
-        <a href = "main.jsp"><button type="button">Cancel</button></a>
-        <a href = "payment.jsp"><button type="button">Buy Now</button></a>
+        <a href="main.jsp"><button type="button">Cancel</button></a>
+        <a href="payment.jsp"><button type="button">Buy Now</button></a>
         
         <br><br><br><br>
         

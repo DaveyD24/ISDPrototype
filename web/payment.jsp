@@ -30,7 +30,7 @@
         <!-- CONTENT STARTS HERE -->
         <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
         <div class ="paymain">
-        <form>
+            <form class="xd" action="PaymentServlet" method="POST">
             <div class ="paybox">
                 <br>
             <div class ="paymentfull">

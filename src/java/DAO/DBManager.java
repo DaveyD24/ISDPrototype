@@ -78,4 +78,31 @@ public void addToCart(Product product) {
 public Product[] getItemsInCart() {
     return null;
 }
+
+public int getLastPaymentID() {
+    return 0;
+}
+
+public Customer getCustomerByName(String name) {
+    return null;
+}
+
+            public int ID;
+    public int customer_ID;
+    public String name;
+    public int card_number;
+    public int CVV;
+    public String expiry;
+    public boolean mastercard;
+    public boolean visa;
+
+public void addPayment(int payment_ID, int customer_ID, String name, int card_number, int CVV, String expiry, boolean mastercard, boolean visa) {
+    
+}
+
+
+
+
+
+
 }

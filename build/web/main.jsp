@@ -75,7 +75,7 @@
             </tr>
         </table><br>
         
-        <button action="CheckoutServlet" method="POST" type="button">Checkout</button>
+        <button action="MainServlet" method="POST" type="button">Checkout</button>
         
         
         
