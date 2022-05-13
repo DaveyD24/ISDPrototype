@@ -58,6 +58,14 @@ public void addCustomer(int ID, String email, String first_name, String last_nam
     st.executeUpdate("INSERT INTO Customers " + "VALUES (1001, 'xdd@xdd.com', 'David', 'Dyer', passwordxd)");
 }
 
+public void addProduct(String product_ID, String name, String description, String category, int stock, boolean available, String price) {
+    
+}
+
+public void removeProduct(String product_ID) {
+    
+}
+
 public Customer findCustomer(String username, String email) {
     return null;
 }

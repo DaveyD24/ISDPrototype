@@ -26,15 +26,20 @@
 
         </ul>
                 <br><br><br><br><br><br>
-        <h2><span class="pageheading">Staff Main</span></h2>
+        <h2><span class="pageheading">Staff Control Panel</span></h2>
         
         <!-- CONTENT BODY STARTS HERE -->
         
         
                 <p>Currently logged in as: staff</p>
                 
+                <a href="AddProduct.jsp"><button type="button">Add Products</button></a>
                 <a href="UpdateProduct.jsp"><button type="button">Update Products</button></a>
+                <a href="DeleteProduct.jsp"><button type="button">Delete Products</button></a>
+                
+                <a href="AddCustomer.jsp"><button type="button">Add Customers</button></a>
                 <a href="UpdateCustomer.jsp"><button type="button">Update Customers</button></a><br>
+                <a href="DeleteCustomer.jsp"><button type="button">Delete Customers</button></a>
                 
         <input type="text" class="Search" placeholder="Search Products.."><br><br>
         
