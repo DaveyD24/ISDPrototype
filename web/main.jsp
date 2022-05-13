@@ -54,7 +54,7 @@
                 <td>$129.99</td>
                 <td>In Stock</td>
                 <td>
-                    <button type="button">Add To Cart</button>
+                    <button action="AddToCartServlet" type="button">Add To Cart</button>
                 </td>
             </tr>
                         <tr>
@@ -75,7 +75,7 @@
             </tr>
         </table><br>
         
-        <a href="checkout.jsp"><button type="button">Checkout</button></a>
+        <button action="CheckoutServlet" type="button">Checkout</button>
         
         
         

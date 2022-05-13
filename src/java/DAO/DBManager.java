@@ -12,6 +12,7 @@ package DAO;
 
 import model.Customer;
 import java.sql.*;
+import model.Product;
 
 /* 
 * DBManager is the primary DAO class to interact with the database. 
@@ -64,6 +65,13 @@ public Customer findCustomer(String username, String email) {
 public int getLastID() {
     return 0;
 }
- 
 
+ 
+public Product getProductByName(String name) {
+    return null;
+}
+
+public void addToCart(Product product) {
+    
+}
 }
