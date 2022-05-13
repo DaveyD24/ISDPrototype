@@ -100,6 +100,18 @@ public void addPayment(int payment_ID, int customer_ID, String name, int card_nu
     
 }
 
+public int getLastShipmentID() {
+    return 0;
+}
+
+public void addShipment(int ID, int customer_ID, String name, String address, String city, String state, int zip) {
+    
+}
+
+public void updateStock() {
+    
+}
+
 
 
 

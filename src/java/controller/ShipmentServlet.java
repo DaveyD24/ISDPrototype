@@ -50,8 +50,9 @@ public class ShipmentServlet extends HttpServlet{
         int zip = Integer.parseInt(request.getParameter("postcode").toString());
 
         manager.addShipment(ID + 1, customer_ID, name, address, city, state, zip);
+        manager.updateStock();
         
-        request.getRequestDispatcher("shipping.jsp").include(request, response);
+        request.getRequestDispatcher("confirmation.jsp").include(request, response);
     }
 
 
