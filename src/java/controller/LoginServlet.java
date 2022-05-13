@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import model.Customer;
 
 /**
  *
@@ -30,14 +31,19 @@ public class LoginServlet extends HttpServlet{
 
         String username = request.getParameter("loginUsername");
         String password = request.getParameter("loginPassword");
+        String errorMessage = request.getParameter("errorMessage");
 
         DBManager manager = (DBManager) session.getAttribute("manager");
+        Customer customer = manager.findCustomer(username, password);
 
-        if (username!= null && password != null) {
-            if (username.equals("xd") && password.equals("xd")) {
-                request.getRequestDispatcher("welcome.jsp").include(request, response);
-            }
+        if (customer != null) {
+            session.setAttribute("username", username);
+            request.getRequestDispatcher("welcome.jsp").include(request, response);
         }
+        else {
+            errorMessage = "Invalid Credentials";
+        }
+        
     }
 
 

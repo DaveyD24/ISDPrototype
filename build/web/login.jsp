@@ -40,6 +40,8 @@
                 <!-- Submit button -->    
             </form>
             
+            <p id="errorMessage"></p>
+            
             <!--<button onclick="onLogin()">Login</button>-->
             
             <!-- CONTENT ENDS -->

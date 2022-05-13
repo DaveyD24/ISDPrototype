@@ -30,10 +30,10 @@
         <p>
             Successfully logged in.<br>
             <%
-                if (request.getParameter("username")!= ""){
-                out.println("Logged in user: " + request.getParameter("username") + ". ");
+                if (request.getAttribute("username")!= ""){
+                out.println("Logged in user: " + request.getAttribute("username") + ". ");
                 }
-                session.setAttribute("userinput", request.getParameter("username"));
+                //session.setAttribute("userinput", request.getParameter("username"));
             
             %>
             
