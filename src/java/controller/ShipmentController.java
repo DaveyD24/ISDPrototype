@@ -20,8 +20,8 @@ public class ShipmentController {
     
     
     public void AddShipmentMethod(int ID, String first_name, String last_name, String address, String city, String state, int zip) {
-        Shipment shipment = new Shipment(ID, first_name, last_name, address, city, state, zip);
-        shipments.add(shipment);
+        //Shipment shipment = new Shipment(ID, first_name, last_name, address, city, state, zip);
+        //shipments.add(shipment);
         //Add to database
     }
     

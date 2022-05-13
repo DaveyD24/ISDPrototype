@@ -13,17 +13,16 @@ package model;
 
 public class Shipment {
     public int ID;
-    public String first_name;
-    public String last_name;
+    public int Customer_ID;
+    public String name;
     public String address;
     public String city;
     public String state;
     public int zip;
     
-    public Shipment(int ID, String first_name, String last_name, String address, String city, String state, int zip) {
+    public Shipment(int ID, int Customer_ID, String name, String address, String city, String state, int zip) {
         this.ID = ID;
-        this.first_name = first_name;
-        this.last_name = last_name;
+        this.name = name;
         this.address = address;
         this.city = city;
         this.state = state;

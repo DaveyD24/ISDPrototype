@@ -38,6 +38,7 @@ public class LoginServlet extends HttpServlet{
 
         if (customer != null) {
             session.setAttribute("username", username);
+            session.setAttribute("userID", customer.getID());
             request.getRequestDispatcher("welcome.jsp").include(request, response);
         }
         else {
