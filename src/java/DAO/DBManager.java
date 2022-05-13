@@ -74,4 +74,8 @@ public Product getProductByName(String name) {
 public void addToCart(Product product) {
     
 }
+
+public Product[] getItemsInCart() {
+    return null;
+}
 }

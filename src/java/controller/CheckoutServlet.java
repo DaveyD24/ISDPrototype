@@ -20,23 +20,27 @@ import model.Product;
  *
  * @author dtdye
  */
-@WebServlet(name="AddToCartServlet", value="/AddToCartServlet")
-public class AddToCartServlet extends HttpServlet{
+@WebServlet(name="CheckoutServlet", value="/CheckoutServlet")
+public class CheckoutServlet extends HttpServlet{
 
     @Override
-    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
 
         HttpSession session = request.getSession();
         Validator validator = new Validator();
-        
-        String product_name = "";
-        //Set this to name of product in table where the button is
-
         DBManager manager = (DBManager) session.getAttribute("manager");
+        String errorMessage = request.getParameter("checkoutErrorMessage");
         
-        Product product = manager.getProductByName(product_name);
-        manager.addToCart(product);
+        Product[] products_in_cart = manager.getItemsInCart();
+        
+        if (products_in_cart.length == 0) {
+            errorMessage = "Add items to your cart to checkout";
+            request.getRequestDispatcher("main.jsp").include(request, response);
+        }
+        else {
+            request.getRequestDispatcher("checkout.jsp").include(request, response);
+        }
         
     }
 
