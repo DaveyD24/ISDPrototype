@@ -27,7 +27,7 @@
         <h2><span class="pageheading">Register</span></h2>
         
         <!-- CONTENT STARTS HERE -->
-        <form class="formxd" method="POST" action="welcome.jsp">
+        <form class="formxd" method="POST" action="RegisterServlet">
             <label for="email">Email:</label><br>
             <input type="email" id="regEmail" name="regEmail"><br><br>
             <!-- Email Label and Textfield -->

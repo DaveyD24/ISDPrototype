@@ -60,6 +60,10 @@ public void addCustomer(int ID, String email, String first_name, String last_nam
 public Customer findCustomer(String username, String email) {
     return null;
 }
+
+public int getLastID() {
+    return 0;
+}
  
 
 }

@@ -33,6 +33,13 @@
         <!-- CONTENT STARTS HERE -->
         
         <p>Currently logged in as: user</p>
+                    <%
+                if (request.getAttribute("username")!= ""){
+                out.println("Logged in user: " + request.getAttribute("username") + ". ");
+                }
+                //session.setAttribute("userinput", request.getParameter("username"));
+            
+            %>
         <input type="text" class="Search" placeholder="Search Products.."><br><br>
         
         <table>
