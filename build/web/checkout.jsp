@@ -84,7 +84,7 @@
         
         <br>
         
-        <a href="main.jsp"><button type="button">Cancel</button></a>
+        <button type="button" action="CancelCheckoutServlet">Cancel</button>
         <a href="payment.jsp"><button type="button">Buy Now</button></a>
         
         <br><br><br><br>

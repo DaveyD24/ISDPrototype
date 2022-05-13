@@ -97,7 +97,7 @@
 </div>
       </form>
             <a href="checkout.jsp"><button>Back</button></a>
-            <a href="shipping.jsp"><button>Continue</button></a>
+            <button action="CancelOrderServlet">Cancel Order</button>
         </div>
         <br><br><br><br><br>
         

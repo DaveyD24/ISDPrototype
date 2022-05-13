@@ -128,6 +128,10 @@ public Product getProductByID(String product_ID) {
     return null;
 }
 
+public void clearCart() {
+    
+}
+
 
 
 

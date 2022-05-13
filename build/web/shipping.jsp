@@ -106,6 +106,9 @@
     
     </body>
     </head>
+    
+    <a href="payment.jsp"><button>Back</button></a>
+    <button action="CancelOrderServlet">Cancel Order</button>
 <!-- SUB
 <Form>
 First Name*

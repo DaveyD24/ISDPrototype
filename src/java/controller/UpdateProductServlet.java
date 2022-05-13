@@ -20,7 +20,7 @@ import model.Product;
  *
  * @author dtdye
  */
-@WebServlet(name="UpdateProductServlet", value="/UpdateCustomerServlet")
+@WebServlet(name="UpdateProductServlet", value="/UpdateProductServlet")
 public class UpdateProductServlet extends HttpServlet{
 
     @Override
@@ -30,39 +30,6 @@ public class UpdateProductServlet extends HttpServlet{
         Validator validator = new Validator();
         DBManager manager = (DBManager) session.getAttribute("manager");
         
-        /*
-            <label for="product_id">Enter Product ID:</label>
-            <input type="number" id="product_id" name="product_id">
-        
-        <!-- In the real program, right here we would match the users input to an actual customer in our database-->
-        <!-- For now, lets pretend the input is valid -->
-        
-        
-
-            <label for="product_name">Name: </label>
-            <input type="text" id="product_name" name="product_name"><br>
-            
-            <label for="description">Description</label>
-            <input type="text" id="description" name="description" class="fat"><br>
-            
-            <label for="category">Category: </label>
-            <input type="text" id="category" name="category"><br>
-            
-            <label for="stock">Stock:</label>
-            <input type="number" id="stock" name="stock"><br>
-            
-            <label for="available">Available</label>
-            <input type="checkbox" id="available" name="available"><br>
-            
-            <label for="manufacturer">Manufacturer:</label>
-            <input type="text" id="manufacturer" name="manufacturer"><br>
-            
-            <label for="price">Price:</label>
-            <input type="number" id="price" name="price"><br>
-
-            <input type="submit" value="Overwrite" class="btn">
-        */
-        
         String errorMessage = request.getParameter("UPerrorMessage");
         
         String product_ID = request.getParameter("product_id");
@@ -70,7 +37,7 @@ public class UpdateProductServlet extends HttpServlet{
         String description = request.getParameter("description");
         String category = request.getParameter("category");
         String stock_str = request.getParameter("stock");
-        int stock;
+        int stock = 0;
         
         String available_str = request.getParameter("available");
         boolean available;
