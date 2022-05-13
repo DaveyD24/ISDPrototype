@@ -57,6 +57,8 @@ submit button
                 <form class="updateForm" action="DeleteProductServlet" method="POST">
             <label for="product_id">Enter Product ID:</label>
             <input type="number" id="product_id" name="product_id">
+            
+            <input type="submit" value="Delete" class="btn">
 
         </form>
         

@@ -27,7 +27,7 @@
 
         </ul>
                 <br><br><br><br><br><br>
-        <h2><span class="pageheading">Add Product</span></h2>
+        <h2><span class="pageheading">Delete Customer</span></h2>
         
         <!-- CONTENT BODY STARTS HERE -->
         
@@ -54,47 +54,17 @@ submit button
 -->
         
         
-                <form class="updateForm" action="AddProductServlet" method="POST">
-            <label for="product_id">Enter Product ID:</label>
-            <input type="number" id="product_id" name="product_id">
-        
-        <!-- In the real program, right here we would match the users input to an actual customer in our database-->
-        <!-- For now, lets pretend the input is valid -->
-        
-        
+                <form class="updateForm" action="DeleteCustomerServlet" method="POST">
+            <label for="customer_id">Enter Customer ID:</label>
+            <input type="number" id="customer_id" name="customer_id">
+            
+            <input type="submit" value="Delete" class="btn">
 
-            <label for="product_name">Name: </label>
-            <input type="text" id="product_name" name="product_name"><br>
-            
-            <label for="description">Description</label>
-            <input type="text" id="description" name="description" class="fat"><br>
-            
-            <label for="category">Category: </label>
-            <input type="text" id="category" name="category"><br>
-            
-            <label for="stock">Stock:</label>
-            <input type="number" id="stock" name="stock"><br>
-            
-            <label for="available">Available</label>
-            <input type="checkbox" id="available" name="available"><br>
-            
-            <label for="manufacturer">Manufacturer:</label>
-            <input type="text" id="manufacturer" name="manufacturer"><br>
-            
-            <label for="price">Price:</label>
-            <input type="number" id="price" name="price"><br>
-
-            <input type="submit" value="Add" class="btn">
         </form>
         
-        <p id="APerrorMessage" name="APerrorMessage"></p><br>
+        <p id="APerrorMessage" name="DCerrorMessage"></p><br>
         
-        
-        
-        
-        
-        
-        
+
         <!-- CONTENT BODY ENDS HERE -->
   
          <footer>

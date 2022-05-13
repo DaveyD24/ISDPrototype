@@ -20,8 +20,8 @@ import model.Product;
  *
  * @author dtdye
  */
-@WebServlet(name="UpdateCustomerServlet", value="/UpdateCustomerServlet")
-public class UpdateCustomerServlet extends HttpServlet{
+@WebServlet(name="AddCustomerServlet", value="/AddCustomerServlet")
+public class AddCustomerServlet extends HttpServlet{
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
@@ -37,24 +37,25 @@ public class UpdateCustomerServlet extends HttpServlet{
         String last_name = request.getParameter("last_name");
         String password = request.getParameter("password");
         
-        String errorMessage = request.getParameter("UCerrorMessage");
+        String errorMessage = request.getParameter("ACerrorMessage");
         
         Customer customer = null;
+        int ID = 0;
         
         if (customer_ID == null || email == null || first_name == null || last_name == null || password == null) {
             errorMessage = "Please fill in all fields";
-            request.getRequestDispatcher("UpdateCustomer.jsp").include(request, response);
+            request.getRequestDispatcher("AddCustomer.jsp").include(request, response);
         }
         else {
             
             customer = manager.getCustomerByID(customer_ID);
-            if (customer == null) {
-                errorMessage = "No such customer in the database";
-                request.getRequestDispatcher("UpdateCustomer.jsp").include(request, response);
+            if (customer != null) {
+                errorMessage = "Customer already exists in the database";
+                request.getRequestDispatcher("AddCustomer.jsp").include(request, response);
             }
             else {
-                manager.updateCustomer(customer_ID, email, first_name, last_name, password);
-                request.getRequestDispatcher("staffmain.jsp").include(request, response);
+                ID = Integer.parseInt(customer_ID);
+                manager.addCustomer(ID, email, first_name, last_name, password);
             }
         }
         

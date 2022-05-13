@@ -51,6 +51,9 @@ submit button
         <!-- In the real program, right here we would match the users input to an actual customer in our database-->
         <!-- For now, lets pretend the input is valid -->
 
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        
             <label for="first_name">First Name: </label>
             <input type="text" id="first_name" name="first_name"><br>
             

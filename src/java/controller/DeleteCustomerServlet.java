@@ -7,9 +7,6 @@ package controller;
 
 import DAO.DBManager;
 import java.io.IOException;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,35 +14,37 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import model.Customer;
+import model.Product;
 
 /**
  *
  * @author dtdye
  */
-@WebServlet(name="RegisterServlet", value="/RegisterServlet")
-public class RegisterServlet extends HttpServlet{
+@WebServlet(name="DeleteCustomerServlet", value="/DeleteCustomerServlet")
+public class DeleteCustomerServlet extends HttpServlet{
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
-
         HttpSession session = request.getSession();
         Validator validator = new Validator();
-
-        String email = request.getParameter("regEmail");
-        String firstName = request.getParameter("regFirstName");
-        String lastName = request.getParameter("regLastName");
-        String phone = request.getParameter("regPhone");
-        String password = request.getParameter("regPassword");
+        DBManager manager = (DBManager) session.getAttribute("manager");
         
-        DBManager manager = (DBManager) session.getAttribute("manager");;
+        String errorMessage = request.getParameter("DCerrorMessage");
         
-        int lastID = manager.getLastID();
+        String customer_ID = request.getParameter("customer_id");
+        Customer customer = manager.getCustomerByID(customer_ID);
         
-            manager.addCustomer(lastID + 1, email, firstName, lastName, password);
-
+        if (customer == null) {
+            errorMessage = "Customer not found in database";
+        }
+        else {
+            manager.removeCustomer(customer_ID);
+            errorMessage = "Customer removed from database";
+        }
         
-        request.getRequestDispatcher("login.jsp").include(request, response);
+        
+        
     }
 
 

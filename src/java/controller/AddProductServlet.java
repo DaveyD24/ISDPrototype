@@ -58,8 +58,8 @@ public class AddProductServlet extends HttpServlet{
         }
         else {
             product = manager.getProductByID(product_ID);
-            if (product == null) {
-                errorMessage = "No such product in the database";
+            if (product != null) {
+                errorMessage = "Product already exists in the database";
                 request.getRequestDispatcher("AddProduct.jsp");
             }
             else {

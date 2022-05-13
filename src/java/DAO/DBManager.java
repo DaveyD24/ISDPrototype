@@ -54,8 +54,12 @@ public void deleteUser(String email) throws SQLException{
 
 }
 
-public void addCustomer(int ID, String email, String first_name, String last_name, String password) throws SQLException {
-    st.executeUpdate("INSERT INTO Customers " + "VALUES (1001, 'xdd@xdd.com', 'David', 'Dyer', passwordxd)");
+public void addCustomer(int ID, String email, String first_name, String last_name, String password){
+    //st.executeUpdate("INSERT INTO Customers " + "VALUES (1001, 'xdd@xdd.com', 'David', 'Dyer', passwordxd)");
+}
+
+public void removeCustomer(String product_ID) {
+    
 }
 
 public void addProduct(String product_ID, String name, String description, String category, int stock, boolean available, String price) {
@@ -124,7 +128,7 @@ public Customer getCustomerByID(String customer_ID) {
     return null;
 }
 
-public void updateCustomer(String customer_ID, String first_name, String last_name, String password) {
+public void updateCustomer(String customer_ID, String email, String first_name, String last_name, String password) {
     
 }
 
