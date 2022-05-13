@@ -27,7 +27,9 @@ and open the template in the editor.
         
         <p>
             <%
-                out.println("Thank you for your order " + request.getAttribute("username") + ". ");
+                //session.setAttribute("username", "bruh");
+                //TEST^^
+                out.println("Thank you for your order " + session.getAttribute("username") + ". ");
             %>
             <br>
             <a href="main.jsp">Return to IoTBay</a>

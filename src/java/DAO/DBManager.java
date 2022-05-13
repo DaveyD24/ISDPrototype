@@ -112,6 +112,14 @@ public void updateStock() {
     
 }
 
+public Customer getCustomerByID(String customer_ID) {
+    return null;
+}
+
+public void updateCustomer(String customer_ID, String first_name, String last_name, String password) {
+    
+}
+
 
 
 

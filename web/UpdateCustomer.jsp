@@ -43,17 +43,14 @@ submit button
 </form>-->
         
         
-        <form>
+        <form class="updateForm" method="POST" action="UpdateCustomerServlet">
+            
             <label for="customer_id">Enter Customer ID:</label>
             <input type="number" id="customer_id" name="customer_id">
-        </form>
-        
+
         <!-- In the real program, right here we would match the users input to an actual customer in our database-->
         <!-- For now, lets pretend the input is valid -->
-        
-        <p>Success! Enter new details for customer [id] below</p><br>
-        
-        <form>
+
             <label for="first_name">First Name: </label>
             <input type="text" id="first_name" name="first_name"><br>
             
@@ -66,10 +63,10 @@ submit button
             <label for="log">Keep existing logs?</label>
             <input type="checkbox" id="log" name="log"><br><br>
             
+            <input type="submit" value="Overwrite" class="btn">
         </form>
         
-        <button>Overwrite</button>
-        
+        <p id="UCerrorMessage" name="UCerrorMessage"></p><br>
         
         
         
