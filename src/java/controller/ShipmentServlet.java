@@ -7,6 +7,9 @@ package controller;
 
 import DAO.DBManager;
 import java.io.IOException;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -49,8 +52,12 @@ public class ShipmentServlet extends HttpServlet{
         String state = request.getParameter("state");
         int zip = Integer.parseInt(request.getParameter("postcode").toString());
 
-        manager.addShipment(ID + 1, customer_ID, name, address, city, state, zip);
-        manager.updateStock();
+        try {
+            manager.addShipment(ID + 1, customer_ID, name, address, city, state, zip);
+        } catch (SQLException ex) {
+            Logger.getLogger(ShipmentServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        manager.DecreaseStock();
         
         request.getRequestDispatcher("confirmation.jsp").include(request, response);
     }

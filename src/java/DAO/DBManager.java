@@ -254,16 +254,34 @@ public int getLastShipmentID() {
     return last_id;
 }
 
-public void addShipment(int ID, int customer_ID, String name, String address, String city, String state, int zip) {
+public void addShipment(int ID, int customer_ID, String name, String address, String city, String state, int zip) throws SQLException {
+    st.executeUpdate("INSERT INTO SHIPMENTS " + "VALUES (ID, customer_ID, name, address, city, state, zip)");
+    Shipment shipment = new Shipment(ID, customer_ID, name, address, city, state, zip);
+    shipments.add(shipment);
     
+    Customer customer = getCustomerByID(customer_ID);
+    customer.addShipment(shipment);
 }
 
-public void updateStock() {
-    
+public void DecreaseStock() {
+    for (Product p : cart) {
+        p.setStock(p.getStock() - 1);
+    }
 }
 
-public void clearCart() {
+public void IncreaseStock() {
+    for (Product p : cart) {
+        p.setStock(p.getStock() + 1);
+    }
+}
+
+public void clearCart() throws SQLException {
+    st.executeUpdate("DELETE * FROM CART");
     
+    for (Product p : cart) {
+        p.setStock(p.getStock() + 1);
+    }
+    cart.clear();
 }
 
 

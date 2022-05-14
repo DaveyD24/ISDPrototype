@@ -19,6 +19,7 @@ public class Customer {
     String last_name;
     String password;
     LinkedList<Payment> payments;
+    LinkedList<Shipment> shipments;
     Log[] logs;
     
     
@@ -29,6 +30,7 @@ public class Customer {
         this.last_name = last_name;
         this.password = password;
         payments = new LinkedList<Payment>();
+        shipments = new LinkedList<Shipment>();
     }
     
     public int getID() {
@@ -69,6 +71,10 @@ public class Customer {
     
     public void addPayment(Payment payment) {
         payments.add(payment);
+    }
+    
+    public void addShipment(Shipment shipment) {
+        shipments.add(shipment);
     }
     
     

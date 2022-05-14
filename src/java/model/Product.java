@@ -38,6 +38,13 @@ public class Product {
         return name;
     }
     
+    public int getStock() {
+        return stock;
+    }
+    
+    public void setStock(int amount) {
+        stock = amount;
+    }
     
     
 }

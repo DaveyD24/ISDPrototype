@@ -7,6 +7,9 @@ package controller;
 
 import DAO.DBManager;
 import java.io.IOException;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -31,7 +34,11 @@ public class CancelOrderServlet extends HttpServlet{
         Validator validator = new Validator();
         DBManager manager = (DBManager) session.getAttribute("manager");
         
-        manager.clearCart();
+        try {
+            manager.clearCart();
+        } catch (SQLException ex) {
+            Logger.getLogger(CancelOrderServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
         request.getRequestDispatcher("main.jsp").include(request, response);
         
     }
