@@ -27,6 +27,10 @@ public class CheckoutServlet extends HttpServlet{
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
         //Unsure if this needs to exist
+        HttpSession session = request.getSession();
+        Validator validator = new Validator();
+        DBManager manager = (DBManager) session.getAttribute("manager");
+        
         
     }
 

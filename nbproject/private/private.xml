@@ -3,44 +3,60 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/CancelOrderServlet.java</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/AddCustomerServlet.java</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/DeleteCustomerServlet.java</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/model/Order.java</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/ConnServlet.java</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/AddToCartServlet.java</file>
-            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/model/Product.java</file>
-            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/DAO/DBManager.java</file>
-            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/main.jsp</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/PaymentServlet.java</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/ProductController.java</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/ShipmentController.java</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/AddProduct.jsp</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/style.css</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/OrderController.java</file>
-            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/checkout.jsp</file>
-            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/welcome.jsp</file>
-            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/model/Shipment.java</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/UpdateCustomerServlet.java</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/shipping.jsp</file>
-            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/UpdateProduct.jsp</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/DAO/DB.java</file>
-            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/In%20Between%20Pages/request.jsp</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/CheckoutServlet.java</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/payment.jsp</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/Validator.java</file>
-            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/UpdateCustomer.jsp</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/model/Customer.java</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/LogController.java</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/DAO/DBConnector.java</file>
-            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/LoginServlet.java</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/staffmain.jsp</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/login.jsp</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/account.jsp</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/logout.jsp</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/index.html</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/DeleteCustomer.jsp</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/model/Product.java</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/DAO/DBManager.java</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/confirmation.jsp</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/main.jsp</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/checkout.jsp</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/UpdateProductServlet.java</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/welcome.jsp</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/DeleteProductServlet.java</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/model/Shipment.java</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/UpdateProduct.jsp</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/In%20Between%20Pages/request.jsp</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/UpdateCustomer.jsp</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/LoginServlet.java</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/AddProductServlet.java</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/model/Log.java</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/PaymentController.java</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/register.jsp</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/RegisterServlet.java</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/main.java</file>
-            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/logout.jsp</file>
-            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/index.html</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/CustomerController.java</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/TestDB.java</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/DeleteProduct.jsp</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/WEB-INF/glassfish-web.xml</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/web/AddCustomer.jsp</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/MainServlet.java</file>
             <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/model/Payment.java</file>
+            <file>file:/C:/Users/dtdye/Documents/NetBeansProjects/ISDAssignment1/ISDPrototype/src/java/controller/ShipmentServlet.java</file>
         </group>
     </open-files>
 </project-private>
