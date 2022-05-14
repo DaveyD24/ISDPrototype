@@ -80,6 +80,7 @@ public void removeCustomer(String customer_ID) {
     if (customer_id != 0) {
         try {
         st.executeUpdate("DELETE FROM CUSTOMERS WHERE CUSTOMER_ID = '" + customer_id + "';");
+        customers.remove(getCustomerByID(customer_id));
         }
         catch (Exception e) {
             return;
@@ -119,27 +120,84 @@ public Customer getCustomerByID(String customer_ID) {
     return customer;
 }
 
+public Customer getCustomerByID(int customer_ID) {
+    
+    Customer customer = null;
+    for (Customer c : customers) {
+        if (c.getID() == customer_ID){
+            customer = c;
+            break;
+        }
+    }
+    return customer;
+}
+
 public void updateCustomer(String customer_ID, String email, String first_name, String last_name, String password) {
     //st.executeQuery("UPDATE CUSTOMERS " + "")
 }
 
-public void addProduct(String product_ID, String name, String description, String category, int stock, boolean available, String price) {
-    
+public void addProduct(int product_ID, String name, String description, String category, int stock, boolean available, int price) throws SQLException{
+    st.executeUpdate("INSERT INTO PRODUCTS " + "VALUES (ID, name, description, category, stock, avilable,  ,price)");
+    Product product = new Product(product_ID, name, description, category, stock, available, "", price);
+    products.add(product);
 }
 
 public void removeProduct(String product_ID) {
+        int product_id = 0;
+    try {
+        product_id = Integer.parseInt(product_ID);
+    }
+    catch (Exception e) {
+        return;
+    }
+    
+    if (product_id != 0) {
+        try {
+        st.executeUpdate("DELETE FROM PRODUCTS WHERE PRODUCT_ID = '" + product_id + "';");
+        products.remove(getProductByID(product_ID));
+        }
+        catch (Exception e) {
+            return;
+        }
+    }
+}
+
+public void updateProduct(String product_ID, String name, String description, String category, int stock, boolean available, String price) {
     
 }
 
+public Product getProductByID(String product_ID) {
+    Product product = null;
+    int ID = Integer.parseInt(product_ID);
+    for (Product p : products) {
+        if (p.getID() == ID){
+            product = p;
+            break;
+        }
+    }
+    return product;
+}
+
+public Product getProductByName(String name) {
+    Product product = null;
+    for (Product p : products) {
+        if (p.getName().equals(name)) {
+            product = p;
+            break;
+        }
+    }
+    
+    return product;
+}
 
 public int getLastID() {
+    //Customer?
     return 0;
 }
 
  
-public Product getProductByName(String name) {
-    return null;
-}
+
+
 
 public void addToCart(Product product) {
     
@@ -169,16 +227,6 @@ public void addShipment(int ID, int customer_ID, String name, String address, St
 
 public void updateStock() {
     
-}
-
-
-
-public void updateProduct(String product_ID, String name, String description, String category, int stock, boolean available, String price) {
-    
-}
-
-public Product getProductByID(String product_ID) {
-    return null;
 }
 
 public void clearCart() {

@@ -7,6 +7,9 @@ package controller;
 
 import DAO.DBManager;
 import java.io.IOException;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -39,6 +42,9 @@ public class AddProductServlet extends HttpServlet{
         String stock_str = request.getParameter("stock");
         int stock = 0;
         
+        int p_ID = 0;
+        int pr = 0;
+        
         String available_str = request.getParameter("available");
         boolean available;
         if (available_str.equals("on")) {
@@ -65,13 +71,19 @@ public class AddProductServlet extends HttpServlet{
             else {
                 try {
                     stock = Integer.parseInt(stock_str);
+                    p_ID = Integer.parseInt(product_ID);
+                    pr = Integer.parseInt(price);
                 }
                 catch (Exception e) {
                     errorMessage = "Please input fields with correct data";
                     request.getRequestDispatcher("AddProduct.jsp");
                 }
                 
-                manager.addProduct(product_ID, name, description, category, stock, available, price);
+                try {
+                    manager.addProduct(p_ID, name, description, category, stock, available, pr);
+                } catch (SQLException ex) {
+                    Logger.getLogger(AddProductServlet.class.getName()).log(Level.SEVERE, null, ex);
+                }
                 
             }
         }
