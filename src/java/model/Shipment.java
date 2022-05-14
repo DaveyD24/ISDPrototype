@@ -29,5 +29,9 @@ public class Shipment {
         this.zip = zip;
     }
     
+    public int getID() {
+        return ID;
+    }
+    
     
 }

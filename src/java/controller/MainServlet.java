@@ -7,6 +7,7 @@ package controller;
 
 import DAO.DBManager;
 import java.io.IOException;
+import java.util.LinkedList;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -32,9 +33,9 @@ public class MainServlet extends HttpServlet{
         DBManager manager = (DBManager) session.getAttribute("manager");
         String errorMessage = request.getParameter("checkoutErrorMessage");
         
-        Product[] products_in_cart = manager.getItemsInCart();
+        LinkedList<Product> products_in_cart = manager.getItemsInCart();
         
-        if (products_in_cart.length == 0) {
+        if (products_in_cart.size() == 0) {
             errorMessage = "Add items to your cart to checkout";
             request.getRequestDispatcher("main.jsp").include(request, response);
         }

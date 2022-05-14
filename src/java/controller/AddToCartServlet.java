@@ -7,6 +7,9 @@ package controller;
 
 import DAO.DBManager;
 import java.io.IOException;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -36,7 +39,11 @@ public class AddToCartServlet extends HttpServlet{
         DBManager manager = (DBManager) session.getAttribute("manager");
         
         Product product = manager.getProductByName(product_name);
-        manager.addToCart(product);
+        try {
+            manager.addToCart(product);
+        } catch (SQLException ex) {
+            Logger.getLogger(AddToCartServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
     }
 

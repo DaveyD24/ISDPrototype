@@ -7,6 +7,9 @@ package controller;
 
 import DAO.DBManager;
 import java.io.IOException;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -57,7 +60,11 @@ public class PaymentServlet extends HttpServlet{
             mastercard = true;
         }
         
-        manager.addPayment(ID + 1, customer_ID, card_name, card_number, CVV, expiry_date, mastercard, visa);
+        try {
+            manager.addPayment(ID + 1, customer_ID, card_name, card_number, CVV, expiry_date, mastercard, visa);
+        } catch (SQLException ex) {
+            Logger.getLogger(PaymentServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
         request.getRequestDispatcher("shipping.jsp").include(request, response);
     }

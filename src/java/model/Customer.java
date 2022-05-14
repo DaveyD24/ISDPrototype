@@ -1,5 +1,7 @@
 package model;
 
+import java.util.LinkedList;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -16,6 +18,7 @@ public class Customer {
     String first_name;
     String last_name;
     String password;
+    LinkedList<Payment> payments;
     Log[] logs;
     
     
@@ -25,6 +28,7 @@ public class Customer {
         this.first_name = first_name;
         this.last_name = last_name;
         this.password = password;
+        payments = new LinkedList<Payment>();
     }
     
     public int getID() {
@@ -61,6 +65,10 @@ public class Customer {
     
     public void setPassword(String password) {
         this.password = password;
+    }
+    
+    public void addPayment(Payment payment) {
+        payments.add(payment);
     }
     
     

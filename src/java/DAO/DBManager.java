@@ -13,7 +13,9 @@ package DAO;
 import model.Customer;
 import java.sql.*;
 import java.util.LinkedList;
+import model.Payment;
 import model.Product;
+import model.Shipment;
 
 /* 
 * DBManager is the primary DAO class to interact with the database. 
@@ -26,6 +28,8 @@ private Statement st;
 LinkedList<Customer> customers = new LinkedList<Customer>();
 LinkedList<Product> products = new LinkedList<Product>();
 LinkedList<Product> cart = new LinkedList<Product>();
+LinkedList<Payment> payments = new LinkedList<Payment>();
+LinkedList<Shipment> shipments = new LinkedList<Shipment>();
    
 public DBManager(Connection conn) throws SQLException {       
    st = conn.createStatement();   
@@ -213,22 +217,41 @@ public void addToCart(Product product) throws SQLException {
     cart.add(product);
 }
 
-public Product[] getItemsInCart() {
-    return null;
+public LinkedList<Product> getItemsInCart() {
+    LinkedList<Product> cart = new LinkedList<Product>();
+    for (Product p : cart) {
+        cart.add(p);
+    }
+    return cart;
 }
 
 public int getLastPaymentID() {
-    return 0;
+    int last_id = 1001;
+    for (Payment p : payments) {
+        last_id = p.getID();
+    }
+    
+    return last_id;
 }
 
 
 
-public void addPayment(int payment_ID, int customer_ID, String name, int card_number, int CVV, String expiry, boolean mastercard, boolean visa) {
+public void addPayment(int payment_ID, int customer_ID, String name, int card_number, int CVV, String expiry, boolean mastercard, boolean visa) throws SQLException{
+    st.executeUpdate("INSERT INTO PAYMENTS " + "VALUES (payment_ID, customer_ID, name, card_number, CVV, expiry, mastercard, visa)");
+    Payment payment = new Payment(payment_ID, customer_ID, name, card_number, CVV, expiry, mastercard);
+    payments.add(payment);
     
+    Customer customer = getCustomerByID(customer_ID);
+    customer.addPayment(payment);
 }
 
 public int getLastShipmentID() {
-    return 0;
+    int last_id = 1001;
+    for (Shipment s : shipments) {
+        last_id = s.getID();
+    }
+    
+    return last_id;
 }
 
 public void addShipment(int ID, int customer_ID, String name, String address, String city, String state, int zip) {

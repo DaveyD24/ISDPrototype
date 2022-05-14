@@ -46,6 +46,10 @@ public class Payment {
         }
     }
     
+    public int getID() {
+        return ID;
+    }
+    
     
     
     
