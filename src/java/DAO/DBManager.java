@@ -25,6 +25,7 @@ public class DBManager {
 private Statement st;
 LinkedList<Customer> customers = new LinkedList<Customer>();
 LinkedList<Product> products = new LinkedList<Product>();
+LinkedList<Product> cart = new LinkedList<Product>();
    
 public DBManager(Connection conn) throws SQLException {       
    st = conn.createStatement();   
@@ -192,15 +193,24 @@ public Product getProductByName(String name) {
 
 public int getLastID() {
     //Customer?
-    return 0;
+    int last_id = 1001;
+    for (Customer c : customers) {
+        last_id = c.getID();
+    }
+    
+    return last_id;
 }
 
  
 
 
 
-public void addToCart(Product product) {
+public void addToCart(Product product) throws SQLException {
+    int ID = product.getID();
+    String name = product.getName();
+    st.executeUpdate("INSERT INTO CART " + "VALUES (ID, name)");
     
+    cart.add(product);
 }
 
 public Product[] getItemsInCart() {
