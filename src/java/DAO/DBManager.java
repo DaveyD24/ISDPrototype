@@ -12,6 +12,7 @@ package DAO;
 
 import model.Customer;
 import java.sql.*;
+import java.util.LinkedList;
 import model.Product;
 
 /* 
@@ -22,11 +23,13 @@ import model.Product;
 public class DBManager {
 
 private Statement st;
+LinkedList<Customer> customers = new LinkedList<Customer>();
+LinkedList<Product> products = new LinkedList<Product>();
    
 public DBManager(Connection conn) throws SQLException {       
    st = conn.createStatement();   
 }
-
+/* OLD STUFF
 //Find user by email and password in the database   
 public Customer findUser(String email, String password) throws SQLException {       
    //setup the select sql query string       
@@ -52,14 +55,72 @@ public void updateUser( String email, String name, String password, String gende
 public void deleteUser(String email) throws SQLException{       
    //code for delete-operation   
 
-}
+}*/
 
-public void addCustomer(int ID, String email, String first_name, String last_name, String password){
-    //st.executeUpdate("INSERT INTO Customers " + "VALUES (1001, 'xdd@xdd.com', 'David', 'Dyer', passwordxd)");
-}
-
-public void removeCustomer(String product_ID) {
+public void addSampleData() {
     
+}
+
+public void addCustomer(int ID, String email, String first_name, String last_name, String password) throws SQLException {
+    //st.executeUpdate("INSERT INTO Customers " + "VALUES (1001, 'xdd@xdd.com', 'David', 'Dyer', passwordxd)");
+    st.executeUpdate("INSERT INTO CUSTOMERS " + "VALUES (ID, email, first_name, last_name, password)");
+    Customer customer = new Customer(ID, email, first_name, last_name, password);
+    customers.add(customer);
+}
+
+public void removeCustomer(String customer_ID) {
+    int customer_id = 0;
+    try {
+        customer_id = Integer.parseInt(customer_ID);
+    }
+    catch (Exception e) {
+        return;
+    }
+    
+    if (customer_id != 0) {
+        try {
+        st.executeUpdate("DELETE FROM CUSTOMERS WHERE CUSTOMER_ID = '" + customer_id + "';");
+        }
+        catch (Exception e) {
+            return;
+        }
+    }
+}
+
+/* Old?
+public Customer findCustomer(String username, String email) {
+    return null;
+}*/
+
+public Customer getCustomerByName(String name) {
+    
+    //String[] customers = st.executeUpdate("SELECT * FROM CUSTOMERS WHERE EMAIL = '" + name + "';");
+    Customer customer = null;
+    for (Customer c : customers) {
+        if (c.getEmail().equals(name)) {
+            customer = c;
+            break;
+        }
+    }
+    
+    return customer;
+}
+
+public Customer getCustomerByID(String customer_ID) {
+    
+    Customer customer = null;
+    int ID = Integer.parseInt(customer_ID);
+    for (Customer c : customers) {
+        if (c.getID() == ID){
+            customer = c;
+            break;
+        }
+    }
+    return customer;
+}
+
+public void updateCustomer(String customer_ID, String email, String first_name, String last_name, String password) {
+    //st.executeQuery("UPDATE CUSTOMERS " + "")
 }
 
 public void addProduct(String product_ID, String name, String description, String category, int stock, boolean available, String price) {
@@ -70,9 +131,6 @@ public void removeProduct(String product_ID) {
     
 }
 
-public Customer findCustomer(String username, String email) {
-    return null;
-}
 
 public int getLastID() {
     return 0;
@@ -95,18 +153,7 @@ public int getLastPaymentID() {
     return 0;
 }
 
-public Customer getCustomerByName(String name) {
-    return null;
-}
 
-            public int ID;
-    public int customer_ID;
-    public String name;
-    public int card_number;
-    public int CVV;
-    public String expiry;
-    public boolean mastercard;
-    public boolean visa;
 
 public void addPayment(int payment_ID, int customer_ID, String name, int card_number, int CVV, String expiry, boolean mastercard, boolean visa) {
     
@@ -124,13 +171,7 @@ public void updateStock() {
     
 }
 
-public Customer getCustomerByID(String customer_ID) {
-    return null;
-}
 
-public void updateCustomer(String customer_ID, String email, String first_name, String last_name, String password) {
-    
-}
 
 public void updateProduct(String product_ID, String name, String description, String category, int stock, boolean available, String price) {
     

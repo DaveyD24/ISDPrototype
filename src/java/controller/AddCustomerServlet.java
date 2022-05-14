@@ -7,6 +7,9 @@ package controller;
 
 import DAO.DBManager;
 import java.io.IOException;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -55,7 +58,11 @@ public class AddCustomerServlet extends HttpServlet{
             }
             else {
                 ID = Integer.parseInt(customer_ID);
-                manager.addCustomer(ID, email, first_name, last_name, password);
+                try {
+                    manager.addCustomer(ID, email, first_name, last_name, password);
+                } catch (SQLException ex) {
+                    Logger.getLogger(AddCustomerServlet.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         }
         

@@ -42,7 +42,11 @@ public class RegisterServlet extends HttpServlet{
         
         int lastID = manager.getLastID();
         
+        try {
             manager.addCustomer(lastID + 1, email, firstName, lastName, password);
+        } catch (SQLException ex) {
+            Logger.getLogger(RegisterServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
         
         request.getRequestDispatcher("login.jsp").include(request, response);

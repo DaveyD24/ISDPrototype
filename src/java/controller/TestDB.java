@@ -60,7 +60,7 @@ System.out.print("User favorite color: ");
 
 String favcol = in.nextLine();
 
-db.addUser( email, name, password, gender, favcol);
+//db.addUser( email, name, password, gender, favcol);
 
 System.out.println("User is added to the database.");
 
