@@ -1,12 +1,3 @@
-<%-- 
-    Document   : checkout
-    Created on : 30 Apr 2022, 9:20:02 pm
-    Author     : dtdye
---%>
-
-<%@page import="java.util.HashSet"%>
-<%@page import="java.util.Set"%>
-<%@page import="product_package.Product"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -40,9 +31,10 @@
         }
         </style>
     </head>
+    
     <body>
                 <span class="whitestrip"><img src="Images/blurstrip.png" alt="Banner" height=90></span>
-        <h1>IoTBay</h1>
+                <h1>IoTBay</h1>
         
         
                 <ul class="Navigation">
@@ -54,22 +46,14 @@
         </ul>
                 <br><br><br><br><br><br>
         <h2><span class="pageheading">Checkout</span></h2>
-        
+        <br>
         <!-- CONTENT STARTS HERE -->
         
-        <%!
-        %>
-        
         <%
-            session.setAttribute("quantity1", "5");
-            session.setAttribute("quantity2", "2");
-            session.setAttribute("quantity3", "3");
-            //Product product = (Product)session.getAttribute("product");
         %>
         
-       
-        <form action="OrderHistory.jsp" method="post">
-            <button type="button"><a href = "OrderHistory.jsp">Order history list</a></button>
+        <form action="payment.jsp" method="post">
+            <a href = "OrderHistory.jsp">Order history list</a>
             <table class="test">
                 <tr>
                     <th>Product</th>
@@ -77,47 +61,38 @@
                     <th>Price</th>
                 </tr>
                 <tr>
-                    <td>item 1</td>
-                    <td><input type="text" id ="quantity1" name = "quantity1" value ="<%out.println(session.getAttribute("quantity1").toString());%>" required="true"></td>
-                    <td>$25</td>
+                    <td>Google Home</td>
+                    <td><input type="text" id="quantity1" name="quantity1" value="1" required="true"></td>
+                    <td>$120.2</td>
                 </tr>
                 <tr>
-                    <td>item 2</td>
-                    <td><input type="text" id ="quantity2" name = "quantity2" value = "<%out.println(session.getAttribute("quantity2").toString());%>" required="true"></td>
-                    <td>$100</td>
+                    <td>Alexa</td>
+                    <td><input type="text" id="quantity2" name="quantity2" value="1" required="true"></td>
+                    <td>$220.5</td>
                 </tr>
                 <tr>
-                    <td>item 3</td>
-                    <td><input type="text" id ="quantity3" name = "quantity3" value = "<%out.println(session.getAttribute("quantity3").toString());%>" required = "true"></td>
-                    <td>$5</td>
+                    <td>August DoorBell Cam</td>
+                    <td><input type="text" id="quantity3" name="quantity3" value="1" required="true"></td>
+                    <td>$35.1</td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>Total:</td>
-                    <td><label id ="price_label" for="price">...</label></td>
+                    <td>$...</td>
                 </tr>
             </table>
         
         <br>
         
-        <%
-            //Product product = new Product("Google Home", "A google home", "home", 150.0, 20);
-            //Product product2 = new Product("Amazon Echo", "A amazon echo", "technology", 210.2, 15);
-            //Product product3 = new Product("August DoorBell Cam", "A august doorbell cam", "home", 54.5, 90);
-            //session.setAttribute("product", product);
-            //session.setAttribute("product2", product2);
-            //session.setAttribute("product3", product3);
-    
-        %>
-        
         
         <a href = "index.html">Cancel</a>
         <input type="submit" value="Continue">
         </form>
-                    
         
         
         <br><br><br><br>
+        
+        
         
         <!-- CONTENT ENDS HERE -->
        
@@ -145,9 +120,4 @@ Total cost of cart
 
 Go To Payment button -> payment.jsp
 Return To Main Page button
--->
-
-<!--
-The payment page needs to receive the total cost of the cart and the purchased items from this page.
-
 -->
