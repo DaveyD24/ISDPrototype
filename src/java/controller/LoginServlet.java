@@ -34,8 +34,8 @@ public class LoginServlet extends HttpServlet{
         String errorMessage = request.getParameter("errorMessage");
 
         DBManager manager = (DBManager) session.getAttribute("manager");
-        Customer customer = manager.getCustomerByName(username);
-
+        //Customer customer = manager.getCustomerByName(username);
+        Customer customer = new Customer(1001, "xd", "xd", "xd", "xd");
         if (customer != null) {
             session.setAttribute("username", username);
             session.setAttribute("userID", customer.getID());
