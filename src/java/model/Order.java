@@ -34,6 +34,22 @@ public class Order {
         return this.ID;
     }
     
+    public int getCustomerID() {
+        return this.customer_ID;
+    }
+    
+    public void setCustomerID(int customer_ID) {
+        this.customer_ID = customer_ID;
+    }
+    
+    public int getQuantity() {
+        return this.quantity;
+    }
+    
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+    
     public void addToOrder(Product product) {
         products.add(product);
     }

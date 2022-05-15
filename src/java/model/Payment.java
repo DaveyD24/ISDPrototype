@@ -37,6 +37,50 @@ public class Payment {
         }
     }
     
+    public int getID() {
+        return this.ID;
+    }
+    
+    public int getCustomerID() {
+        return this.customer_ID;
+    }
+    
+    public void setCustomerID(int ID) {
+        this.customer_ID = ID;
+    }
+    
+    public String getName() {
+        return this.name;
+    }
+    
+    public void setName() {
+        this.name = name;
+    }
+    
+    public int getCardNumber() {
+        return this.card_number;
+    }
+    
+    public void setCardNumber(int number) {
+        this.card_number = number;
+    }
+    
+    public int getCVV() {
+        return this.CVV;
+    }
+    
+    public void setCVV(int cvv) {
+        this.CVV = cvv;
+    }
+    
+    public String getExpiry() {
+        return this.expiry;
+    }
+    
+    public void setExpiry(String expiry) {
+        this.expiry = expiry;
+    }
+    
     public String getCardType() {
         if (mastercard) {
             return "mastercard";
@@ -44,10 +88,6 @@ public class Payment {
         else {
             return "visa";
         }
-    }
-    
-    public int getID() {
-        return ID;
     }
     
     

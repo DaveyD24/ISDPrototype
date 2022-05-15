@@ -27,7 +27,6 @@
                 <br><br><br><br><br><br>
         <h2><span class="pageheading">My Account</span></h2>
         
-        <p>View my logs xd</p>
         <button>My Registration Details</button><br><br>
         <button>My Access Logs</button><br><br>
         <button>My Order History</button><br><br>

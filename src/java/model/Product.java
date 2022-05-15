@@ -38,12 +38,60 @@ public class Product {
         return name;
     }
     
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public String getDescription() {
+        return this.description;
+    }
+    
+    public void setDescription(String description) {
+        this.description = description;
+    }
+    
+    public String getCategory() {
+        return this.category;
+    }
+    
+    public void setCategory(String category) {
+        this.category = category;
+    }
+    
     public int getStock() {
         return stock;
     }
     
     public void setStock(int amount) {
         stock = amount;
+    }
+    
+    public String getManufacturer() {
+        return this.manufacturer;
+    }
+    
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+    
+    public boolean getAvailability() {
+        return this.available;
+    }
+    
+    public void setAvailable() {
+        available = true;
+    }
+    
+    public void setUnavailable() {
+        available = false;
+    }
+    
+    public double getPrice() {
+        return this.price;
+    }
+    
+    public void setPrice(double price) {
+        this.price = price;
     }
     
     
