@@ -1,9 +1,3 @@
-<%-- 
-    Document   : checkout
-    Created on : 30 Apr 2022, 9:20:02 pm
-    Author     : dtdye
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -37,9 +31,10 @@
         }
         </style>
     </head>
+    
     <body>
                 <span class="whitestrip"><img src="Images/blurstrip.png" alt="Banner" height=90></span>
-        <h1>IoTBay</h1>
+                <h1>IoTBay</h1>
         
         
                 <ul class="Navigation">
@@ -47,13 +42,18 @@
             <li><a href="login.jsp">Login</a></li>
             <li><a href="register.jsp">Register</a></li>
             <li><a href="logout.jsp">Logout</a></li>
-            <li><a href="account.jsp">My Account</a></li>
 
         </ul>
                 <br><br><br><br><br><br>
         <h2><span class="pageheading">Checkout</span></h2>
-        
+        <br>
         <!-- CONTENT STARTS HERE -->
+        
+        <%
+        %>
+        
+        <form action="payment.jsp" method="post">
+            <a href = "OrderHistory.jsp">Order history list</a>
             <table class="test">
                 <tr>
                     <th>Product</th>
@@ -61,35 +61,37 @@
                     <th>Price</th>
                 </tr>
                 <tr>
-                    <td>item 1</td>
-                    <td>2</td>
-                    <td>$25</td>
+                    <td>Google Home</td>
+                    <td><input type="text" id="quantity1" name="quantity1" value="1" required="true"></td>
+                    <td>$120.2</td>
                 </tr>
                 <tr>
-                    <td>item 2</td>
-                    <td>1</td>
-                    <td>$100</td>
+                    <td>Alexa</td>
+                    <td><input type="text" id="quantity2" name="quantity2" value="1" required="true"></td>
+                    <td>$220.5</td>
                 </tr>
                 <tr>
-                    <td>item 3</td>
-                    <td>3</td>
-                    <td>$5</td>
+                    <td>August DoorBell Cam</td>
+                    <td><input type="text" id="quantity3" name="quantity3" value="1" required="true"></td>
+                    <td>$35.1</td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>Total:</td>
-                    <td>$165</td>
+                    <td>$...</td>
                 </tr>
             </table>
         
         <br>
         
-        <button type="button" action="CancelCheckoutServlet">Cancel</button>
-        <a href="payment.jsp"><button type="button">Buy Now</button></a>
+        
+        <a href = "index.html">Cancel</a>
+        <input type="submit" value="Continue">
+        </form>
+        
         
         <br><br><br><br>
         
-
         
         
         <!-- CONTENT ENDS HERE -->
@@ -102,7 +104,6 @@
                 <li class="ActFoot"><a href="login.jsp">Login</a></li>
                 <li><a href="register.jsp">Register</a></li>
                 <li><a href="logout.jsp">Logout</a></li>
-                <li><a href="account.jsp">My Account</a></li>
             </ul>
             
         </footer>

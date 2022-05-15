@@ -4,7 +4,7 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Checkout</title>
+        <title>Order History</title>
         <style>
         table {
         border: 1px solid;
@@ -17,7 +17,7 @@
         th {
         height: 50px;
         border: 1px solid;
-        width: 65%;
+        width: 18%;
         padding: 15px;
         background-color: #04AA6D;
         color: white;
@@ -31,13 +31,11 @@
         }
         </style>
     </head>
-    
     <body>
                 <span class="whitestrip"><img src="Images/blurstrip.png" alt="Banner" height=90></span>
-                <h1>IoTBay</h1>
+        <h1>IoTBay</h1>
         
-        
-                <ul class="Navigation">
+                        <ul class="Navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="login.jsp">Login</a></li>
             <li><a href="register.jsp">Register</a></li>
@@ -45,52 +43,55 @@
 
         </ul>
                 <br><br><br><br><br><br>
-        <h2><span class="pageheading">Checkout</span></h2>
-        <br>
+        <h2><span class="pageheading">Order History</span></h2>
+        
         <!-- CONTENT STARTS HERE -->
         
-        <%
-        %>
-        
-        <form action="payment.jsp" method="post">
-            <a href = "OrderHistory.jsp">Order history list</a>
-            <table class="test">
+        <table>
                 <tr>
-                    <th>Product</th>
+                    <th>Order ID</th>
+                    <th>Date</th>
+                    <th>Products</th>
                     <th>Quantity</th>
-                    <th>Price</th>
+                    <th>Delivery Address</th>
+                    <th>Total Price</th>
                 </tr>
                 <tr>
-                    <td>Google Home</td>
-                    <td><input type="text" id="quantity1" name="quantity1" value="1" required="true"></td>
-                    <td>$120.2</td>
+                    <td>1</td>
+                    <td>05/05/22</td>
+                    <td>Google Home, Alexa</td>
+                    <td>5</td>
+                    <td>123 Turtle Drive Hippo Avenue NSW Australia</td>
+                    <td>$123.45</td>
                 </tr>
                 <tr>
-                    <td>Alexa</td>
-                    <td><input type="text" id="quantity2" name="quantity2" value="1" required="true"></td>
-                    <td>$220.5</td>
+                    <td>2</td>
+                    <td>07/05/22</td>
+                    <td>Google Home, Alexa</td>
+                    <td>8</td>
+                    <td>321 Rabbit Drive Dinosaur Avenue NSW Australia</td>
+                    <td>$54.32</td>
                 </tr>
                 <tr>
-                    <td>August DoorBell Cam</td>
-                    <td><input type="text" id="quantity3" name="quantity3" value="1" required="true"></td>
-                    <td>$35.1</td>
+                    <td>3</td>
+                    <td>10/05/22</td>
+                    <td>Google Home, Alexa</td>
+                    <td>2</td>
+                    <td>45 Lion Drive Suffering Avenue NSW Australia</td>
+                    <td>$100.05</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td>Total:</td>
-                    <td>$...</td>
+                    <td>4</td>
+                    <td>12/05/22</td>
+                    <td>Google Home, Alexa</td>
+                    <td>9</td>
+                    <td>7 Rhino Drive Orange Avenue NSW Australia</td>
+                    <td>$67.89</td>
                 </tr>
-            </table>
-        
-        <br>
-        
-        
-        <a href = "index.html">Cancel</a>
-        <input type="submit" value="Continue">
-        </form>
+        </table>
+        <a href = "checkout.jsp">Back</a>
         
         
-        <br><br><br><br>
         
         
         
@@ -107,15 +108,6 @@
             </ul>
             
         </footer>
-        
-        
+               
     </body>
 </html>
-
-<!-- NATHAN
-List of products in cart (random hardcoded products for now)
-Foreach product: Product name, quantity, price
-Total cost of cart
-Go To Payment button -> payment.jsp
-Return To Main Page button
--->
